@@ -9,7 +9,7 @@ const config: Config = {
     extend: {
       colors: {
         'navy-dark': '#0B0B0B',
-        'gold': '#D4AF37',
+        'gold': '#F2BE73',
         'cream': '#F5F5F5',
       },
       animation: {
