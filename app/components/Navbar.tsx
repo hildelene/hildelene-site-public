@@ -18,16 +18,36 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-navy-dark/95 backdrop-blur-sm border-b border-gold/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-navy-dark/55 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link 
             href="/" 
-            className="flex-shrink-0 font-bold text-xl text-gold hover:text-cream transition-colors"
+            className="hidden flex-shrink-0 text-xl font-bold text-gold transition-colors hover:text-cream md:block"
           >
             Hildelene Nautidesign
           </Link>
+
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="inline-flex items-center justify-center rounded-md p-2 text-gold hover:bg-white/5 focus:outline-none md:hidden"
+            aria-label="Abrir menu"
+          >
+            <svg
+              className="h-6 w-6"
+              stroke="currentColor"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d={isOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
+              />
+            </svg>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -66,30 +86,10 @@ export default function Navbar() {
           {/* Team Area Button */}
           <a 
             href="#" 
-            className="hidden md:block px-6 py-2 bg-gold text-navy-dark font-semibold rounded-lg hover:bg-cream transition-all duration-200 transform hover:scale-105"
+            className="rounded-lg border border-gold/70 bg-gold/10 px-5 py-2 font-semibold text-gold transition-all duration-200 hover:scale-105 hover:bg-gold/20"
           >
-            Area da Equipe
+            Contato
           </a>
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gold hover:bg-navy-dark focus:outline-none"
-          >
-            <svg
-              className="h-6 w-6"
-              stroke="currentColor"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d={isOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
-              />
-            </svg>
-          </button>
         </div>
 
         {/* Mobile Menu */}
