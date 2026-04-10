@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { NewsItem } from '../data/newsData';
 
 interface NewsCardProps {
@@ -28,12 +27,12 @@ export default function NewsCard({ news }: NewsCardProps) {
           {news.description}
         </p>
 
-        {/* Link para leitura */}
+        {/* Read More Link */}
         <a
           href={news.link || '#'}
           className="text-gold font-semibold hover:text-cream transition-colors inline-flex items-center group/link"
         >
-          Leia mais
+          Ler mais
           <span className="ml-2 group-hover/link:translate-x-1 transition-transform">→</span>
         </a>
       </div>

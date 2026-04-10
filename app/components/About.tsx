@@ -15,20 +15,21 @@ export default function About() {
             <div className="h-1 w-20 bg-gradient-to-r from-gold to-transparent mb-8" />
 
             <p className="text-cream/80 text-lg mb-6 leading-relaxed">
-              A Hildelene Nautidesign é uma equipe de engenheiros, projetistas e inovadores
-              apaixonados pelo avanço da engenharia naval. Unimos tecnologia de ponta e
-              conhecimento marítimo para criar embarcações que ampliam os limites do possível.
+              A Hildelene Nautidesign e uma equipe de engenheiros, designers e inovadores
+              apaixonados por evoluir a engenharia naval. Combinamos tecnologia de ponta com
+              conhecimento maritimo tradicional para criar embarcacoes que ampliam os limites do
+              que e possivel.
             </p>
 
             <p className="text-cream/80 text-lg mb-6 leading-relaxed">
-              Nossa missão é demonstrar excelência em engenharia por meio de inovação,
-              colaboração e precisão. Cada projeto representa nosso compromisso com sustentabilidade,
-              desempenho e avanço tecnológico no setor naval.
+              Nossa missao e demonstrar excelencia em engenharia por meio de inovacao,
+              colaboracao e precisao. Cada projeto que desenvolvemos representa nosso compromisso
+              com sustentabilidade, desempenho e avancos tecnologicos no setor naval.
             </p>
 
             <p className="text-cream/80 text-lg mb-8 leading-relaxed">
-              Do projeto e da simulação aos testes e à implementação, nossa equipe reúne
-              competências diversas para resolver desafios complexos e criar soluções relevantes.
+              Do projeto e simulacao aos testes e implementacao, nossa equipe integra
+              competencias diversas para resolver desafios complexos e entregar solucoes relevantes.
             </p>
 
             {/* Core Values */}
@@ -38,16 +39,16 @@ export default function About() {
                 <p className="text-cream/70 text-sm">Superando limites com ideias transformadoras</p>
               </div>
               <div className="p-4 bg-navy-dark/50 border border-gold/20 rounded-lg hover:border-gold transition-colors">
-                <h3 className="text-gold font-bold mb-2">Excelência</h3>
-                <p className="text-cream/70 text-sm">Buscando precisão em cada detalhe</p>
+                <h3 className="text-gold font-bold mb-2">Excelencia</h3>
+                <p className="text-cream/70 text-sm">Busca constante pela qualidade em cada detalhe</p>
               </div>
               <div className="p-4 bg-navy-dark/50 border border-gold/20 rounded-lg hover:border-gold transition-colors">
-                <h3 className="text-gold font-bold mb-2">Colaboração</h3>
-                <p className="text-cream/70 text-sm">Alcançando mais juntos, como um só time</p>
+                <h3 className="text-gold font-bold mb-2">Colaboracao</h3>
+                <p className="text-cream/70 text-sm">Mais resultado por meio de trabalho em equipe</p>
               </div>
               <div className="p-4 bg-navy-dark/50 border border-gold/20 rounded-lg hover:border-gold transition-colors">
                 <h3 className="text-gold font-bold mb-2">Sustentabilidade</h3>
-                <p className="text-cream/70 text-sm">Construindo um futuro marítimo responsável</p>
+                <p className="text-cream/70 text-sm">Construindo um futuro maritimo responsavel</p>
               </div>
             </div>
           </div>
@@ -57,7 +58,7 @@ export default function About() {
             <div className="relative h-96 rounded-lg overflow-hidden bg-gradient-to-br from-gold/20 to-navy-dark/50 border border-gold/30">
               <img
                 src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=600&fit=crop"
-                alt="Hildelene Team"
+                alt="Equipe Hildelene"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-dark via-transparent to-transparent opacity-30" />
@@ -66,7 +67,7 @@ export default function About() {
             {/* Floating Stats */}
             <div className="absolute -bottom-6 -right-6 bg-gold text-navy-dark p-4 rounded-lg shadow-xl">
               <div className="text-3xl font-bold">50+</div>
-              <div className="text-sm font-semibold">Integrantes</div>
+              <div className="text-sm font-semibold">Membros da Equipe</div>
             </div>
           </div>
         </div>

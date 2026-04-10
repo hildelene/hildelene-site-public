@@ -13,15 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Hildelene Nautidesign - Excelência em Engenharia Naval',
+  title: 'Hildelene Nautidesign - Excelencia em Engenharia Naval',
   description:
-    'Hildelene Nautidesign é uma equipe dedicada a impulsionar a engenharia naval com inovação, precisão e excelência tecnológica.',
+    'Pioneirismo no futuro da engenharia naval com inovacao, precisao e excelencia tecnologica. A Hildelene Nautidesign e uma equipe dedicada a superar limites na tecnologia maritima.',
   keywords:
-    'engenharia naval, tecnologia marítima, design de embarcações, competição, inovação',
+    'engenharia naval, tecnologia maritima, projeto de embarcacoes, competicao, inovacao',
   authors: [{ name: 'Hildelene Nautidesign' }],
   openGraph: {
     title: 'Hildelene Nautidesign',
-    description: 'Excelência em engenharia naval',
+    description: 'Excelencia em Engenharia Naval',
     type: 'website',
   },
 };

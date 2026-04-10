@@ -14,8 +14,8 @@ export default function Projects() {
             Nossos <span className="text-gold">Projetos</span>
           </h2>
           <p className="text-cream/70 max-w-2xl mx-auto">
-            Apresentamos nosso compromisso com a excelência em engenharia por meio de projetos
-            marítimos diversos e inovadores.
+            Apresentamos nosso compromisso com a excelencia em engenharia por meio de projetos
+            maritimos diversos e inovadores.
           </p>
           <div className="h-1 w-20 bg-gradient-to-r from-gold to-transparent mx-auto mt-6" />
         </div>

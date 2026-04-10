@@ -35,7 +35,7 @@ export default function Navbar() {
               href="#home" 
               className="text-cream hover:text-gold transition-colors"
             >
-              Início
+              Inicio
             </Link>
             <Link 
               href="#about" 
@@ -53,7 +53,7 @@ export default function Navbar() {
               href="#news" 
               className="text-cream hover:text-gold transition-colors"
             >
-              Notícias
+              Noticias
             </Link>
             <Link 
               href="#contact" 
@@ -68,7 +68,7 @@ export default function Navbar() {
             href="#" 
             className="hidden md:block px-6 py-2 bg-gold text-navy-dark font-semibold rounded-lg hover:bg-cream transition-all duration-200 transform hover:scale-105"
           >
-            Área da Equipe
+            Area da Equipe
           </a>
 
           {/* Mobile Menu Button */}
@@ -99,7 +99,7 @@ export default function Navbar() {
               href="#home" 
               className="block px-3 py-2 text-cream hover:text-gold hover:bg-navy-dark/50 rounded-md transition-colors"
             >
-              Início
+              Inicio
             </Link>
             <Link 
               href="#about" 
@@ -117,7 +117,7 @@ export default function Navbar() {
               href="#news" 
               className="block px-3 py-2 text-cream hover:text-gold hover:bg-navy-dark/50 rounded-md transition-colors"
             >
-              Notícias
+              Noticias
             </Link>
             <Link 
               href="#contact" 
@@ -129,7 +129,7 @@ export default function Navbar() {
               href="#"
               className="block px-3 py-2 bg-gold text-navy-dark font-semibold rounded-md hover:bg-cream transition-all duration-200 text-center"
             >
-              Área da Equipe
+              Area da Equipe
             </a>
           </div>
         )}

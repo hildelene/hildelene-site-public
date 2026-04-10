@@ -11,7 +11,7 @@ export default function Sponsors() {
             Nossos <span className="text-gold">Patrocinadores</span>
           </h2>
           <p className="text-cream/70 max-w-2xl mx-auto">
-            Agradecemos aos parceiros que apoiam a inovação em engenharia naval.
+            Agradecemos aos parceiros que impulsionam a inovacao em engenharia naval.
           </p>
           <div className="h-1 w-20 bg-gradient-to-r from-gold to-transparent mx-auto mt-6" />
         </div>
@@ -25,7 +25,7 @@ export default function Sponsors() {
             >
               <div className="text-center">
                 <p className="text-gold text-sm font-semibold mb-2">Logo {index + 1}</p>
-                <p className="text-cream/50 text-xs">Sponsor</p>
+                <p className="text-cream/50 text-xs">Patrocinador</p>
               </div>
             </div>
           ))}
@@ -34,15 +34,15 @@ export default function Sponsors() {
         {/* Call to Action */}
         <div className="bg-gradient-to-r from-gold/10 to-gold/5 border border-gold/20 rounded-lg p-12 text-center">
           <h3 className="text-2xl sm:text-3xl font-bold text-cream mb-4">
-            Torne-se um <span className="text-gold">Patrocinador</span>
+            Seja <span className="text-gold">Patrocinador</span>
           </h3>
           <p className="text-cream/70 max-w-2xl mx-auto mb-8">
-            Faça parceria com a Hildelene Nautidesign e apoie a próxima geração da inovação naval.
-            Nossos programas de patrocínio oferecem oportunidades únicas para associar sua marca à
-            excelência e à engenharia de ponta.
+            Associe sua marca a Hildelene Nautidesign e apoie a proxima geracao da inovacao naval.
+            Nossos programas de patrocinio oferecem oportunidades unicas para conectar sua empresa
+            a excelencia e a engenharia de ponta.
           </p>
           <button className="px-8 py-3 bg-gold text-navy-dark font-bold rounded-lg hover:bg-cream transition-all duration-200 transform hover:scale-105">
-            Proposta de patrocínio
+            Pacote de Patrocinio
           </button>
         </div>
 
@@ -50,32 +50,32 @@ export default function Sponsors() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
           {[
             {
-              tier: 'Gold Sponsor',
-              price: 'Custom',
+              tier: 'Patrocinador Ouro',
+              price: 'Sob consulta',
               benefits: [
-                'Logo placement on all materials',
-                'Company booth at events',
-                'Digital media exposure',
-                'Quarterly reports',
+                'Logo em todos os materiais',
+                'Espaco da empresa nos eventos',
+                'Exposicao digital da marca',
+                'Relatorios trimestrais',
               ],
             },
             {
-              tier: 'Silver Sponsor',
-              price: 'Custom',
+              tier: 'Patrocinador Prata',
+              price: 'Sob consulta',
               benefits: [
-                'Website recognition',
-                'Event attendance',
-                'Social media features',
-                'Annual report',
+                'Destaque no site',
+                'Participacao em eventos',
+                'Mencoes nas redes sociais',
+                'Relatorio anual',
               ],
             },
             {
-              tier: 'Bronze Sponsor',
-              price: 'Custom',
+              tier: 'Patrocinador Bronze',
+              price: 'Sob consulta',
               benefits: [
-                'Website listing',
-                'Newsletter mentions',
-                'Community recognition',
+                'Listagem no site',
+                'Mencoes na newsletter',
+                'Reconhecimento institucional',
               ],
             },
           ].map((sponsor, index) => (
@@ -84,7 +84,7 @@ export default function Sponsors() {
               className="bg-navy-dark/50 border border-gold/20 rounded-lg p-8 hover:border-gold transition-colors group"
             >
               <h4 className="text-gold font-bold text-xl mb-2">{sponsor.tier}</h4>
-              <p className="text-cream/70 text-sm mb-6">Starting at {sponsor.price}</p>
+              <p className="text-cream/70 text-sm mb-6">A partir de {sponsor.price}</p>
               <ul className="space-y-3">
                 {sponsor.benefits.map((benefit, idx) => (
                   <li key={idx} className="flex items-start text-cream/70 text-sm">

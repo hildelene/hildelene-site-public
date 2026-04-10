@@ -32,7 +32,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {project.description}
         </p>
 
-        {/* Link para detalhes */}
+        {/* Learn More Link */}
         <div className="mt-4 pt-4 border-t border-gold/20">
           <a
             href="#"

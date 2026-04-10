@@ -15,19 +15,19 @@ export default function Footer() {
               Hildelene Nautidesign
             </h3>
             <p className="text-cream/70 text-sm">
-              Excelência em inovação naval e tecnologia marítima.
+              Excelencia em engenharia aplicada a inovacao e tecnologia maritima.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-gold font-bold mb-4">Navegação</h4>
+            <h4 className="text-gold font-bold mb-4">Navegacao</h4>
             <ul className="space-y-2">
               {[
-                { name: 'Início', href: '#home' },
+                { name: 'Inicio', href: '#home' },
                 { name: 'Sobre', href: '#about' },
                 { name: 'Projetos', href: '#projects' },
-                { name: 'Notícias', href: '#news' },
+                { name: 'Noticias', href: '#news' },
               ].map((item) => (
                 <li key={item.name}>
                   <Link
@@ -46,8 +46,8 @@ export default function Footer() {
             <h4 className="text-gold font-bold mb-4">Recursos</h4>
             <ul className="space-y-2">
               {[
-                { name: 'Área da Equipe', href: '#' },
-                { name: 'Documentação', href: '#' },
+                { name: 'Area da Equipe', href: '#' },
+                { name: 'Documentacao', href: '#' },
                 { name: 'Blog', href: '#' },
                 { name: 'Carreiras', href: '#' },
               ].map((item) => (
@@ -100,7 +100,7 @@ export default function Footer() {
               href="#"
               className="text-cream/50 hover:text-gold transition-colors text-sm"
             >
-              Política de Privacidade
+              Politica de Privacidade
             </Link>
             <Link
               href="#"
@@ -112,7 +112,7 @@ export default function Footer() {
               href="#"
               className="text-cream/50 hover:text-gold transition-colors text-sm"
             >
-              Mapa do Site
+              Sitemap
             </Link>
           </div>
         </div>

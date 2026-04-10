@@ -27,7 +27,7 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Here you would typically send the form data to a backend
-    console.log('Form submitted:', formData);
+    console.log('Formulario enviado:', formData);
     setIsSubmitted(true);
 
     // Reset form after 3 seconds
@@ -49,7 +49,7 @@ export default function Contact() {
             Entre em <span className="text-gold">Contato</span>
           </h2>
           <p className="text-cream/70 max-w-2xl mx-auto">
-            Tem dúvidas ou interesse em parceria? Será um prazer falar com você.
+            Tem duvidas ou interesse em parcerias? Teremos prazer em falar com voce.
           </p>
           <div className="h-1 w-20 bg-gradient-to-r from-gold to-transparent mx-auto mt-6" />
         </div>
@@ -60,15 +60,15 @@ export default function Contact() {
             {/* Email */}
             <div>
               <h3 className="text-gold font-bold text-lg mb-2">Email</h3>
-              <p className="text-cream/70">contato@hildelenenautidesign.com</p>
-              <p className="text-cream/50 text-sm mt-1">Disponível para atendimento e parcerias</p>
+              <p className="text-cream/70">info@hildelenenautidesign.com</p>
+              <p className="text-cream/50 text-sm mt-1">Atendimento para duvidas e propostas</p>
             </div>
 
             {/* Address */}
             <div>
-              <h3 className="text-gold font-bold text-lg mb-2">Location</h3>
+              <h3 className="text-gold font-bold text-lg mb-2">Localizacao</h3>
               <p className="text-cream/70">Centro de Engenharia Naval</p>
-              <p className="text-cream/50 text-sm">Distrito Marítimo</p>
+              <p className="text-cream/50 text-sm">Distrito Maritimo</p>
             </div>
 
             {/* Social Media */}
@@ -98,9 +98,9 @@ export default function Contact() {
 
             {/* Quick Links */}
             <div>
-              <h3 className="text-gold font-bold text-lg mb-4">Links rápidos</h3>
+              <h3 className="text-gold font-bold text-lg mb-4">Links Rapidos</h3>
               <ul className="space-y-2">
-                {['Área da Equipe', 'Documentação', 'Perguntas frequentes', 'Carreiras'].map(
+                {['Area da Equipe', 'Documentacao', 'Perguntas Frequentes', 'Carreiras'].map(
                   (link) => (
                     <li key={link}>
                       <a
@@ -142,7 +142,7 @@ export default function Contact() {
               {/* Email */}
               <div>
                 <label htmlFor="email" className="block text-gold font-semibold mb-2">
-                  E-mail
+                  Email
                 </label>
                 <input
                   type="email"
@@ -152,7 +152,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-2 bg-navy-dark border border-gold/30 rounded-lg text-cream placeholder-cream/50 focus:outline-none focus:border-gold transition-colors"
-                  placeholder="seu@email.com"
+                  placeholder="your@email.com"
                 />
               </div>
 
@@ -172,10 +172,10 @@ export default function Contact() {
                   <option value="" disabled>
                     Selecione um assunto
                   </option>
-                  <option value="sponsorship">Proposta de patrocínio</option>
+                  <option value="sponsorship">Proposta de patrocinio</option>
                   <option value="partnership">Oportunidade de parceria</option>
-                  <option value="technical">Dúvida técnica</option>
-                  <option value="media">Solicitação de imprensa</option>
+                  <option value="technical">Duvida tecnica</option>
+                  <option value="media">Solicitacao de imprensa</option>
                   <option value="other">Outro</option>
                 </select>
               </div>
@@ -193,7 +193,7 @@ export default function Contact() {
                   required
                   rows={5}
                   className="w-full px-4 py-2 bg-navy-dark border border-gold/30 rounded-lg text-cream placeholder-cream/50 focus:outline-none focus:border-gold transition-colors resize-none"
-                  placeholder="Escreva sua mensagem aqui..."
+                  placeholder="Escreva sua mensagem..."
                 />
               </div>
 
@@ -207,7 +207,7 @@ export default function Contact() {
 
               {isSubmitted && (
                 <p className="text-gold text-center text-sm">
-                  Obrigado pela mensagem. Responderemos em breve!
+                  Obrigado pela sua mensagem. Em breve entraremos em contato.
                 </p>
               )}
             </form>

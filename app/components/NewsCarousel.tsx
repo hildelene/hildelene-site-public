@@ -44,7 +44,7 @@ export default function NewsCarousel() {
         {/* Header */}
         <div className="mb-12 text-center animate-fade-in">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-cream mb-4">
-            Latest <span className="text-gold">News</span>
+            Ultimas <span className="text-gold">Noticias</span>
           </h2>
           <div className="h-1 w-20 bg-gradient-to-r from-gold to-transparent mx-auto" />
         </div>
@@ -80,7 +80,7 @@ export default function NewsCarousel() {
           <button
             onClick={goPrev}
             className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 sm:-translate-x-12 z-10 p-2 bg-gold text-navy-dark rounded-full hover:bg-cream transition-all duration-200 transform hover:scale-110"
-            aria-label="Previous news"
+            aria-label="Noticia anterior"
           >
             <svg
               className="w-6 h-6"
@@ -98,7 +98,7 @@ export default function NewsCarousel() {
           <button
             onClick={goNext}
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 sm:translate-x-12 z-10 p-2 bg-gold text-navy-dark rounded-full hover:bg-cream transition-all duration-200 transform hover:scale-110"
-            aria-label="Next news"
+            aria-label="Proxima noticia"
           >
             <svg
               className="w-6 h-6"
@@ -124,7 +124,7 @@ export default function NewsCarousel() {
                     ? 'bg-gold w-8'
                     : 'bg-gold/40 w-2 hover:bg-gold/60'
                 }`}
-                aria-label={`Go to news ${index + 1}`}
+                aria-label={`Ir para noticia ${index + 1}`}
               />
             ))}
           </div>
