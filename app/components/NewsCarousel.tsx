@@ -1,38 +1,75 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useCallback, useEffect, useState } from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
 import NewsCard from './NewsCard';
 import { newsData } from '../data/newsData';
 
 export default function NewsCarousel() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [itemsPerView, setItemsPerView] = useState(3);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
+  const [parallaxValues, setParallaxValues] = useState<number[]>([]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    align: 'start',
+    containScroll: 'trimSnaps',
+  });
 
-  // Update items per view based on screen size
+  const updateParallax = useCallback(() => {
+    if (!emblaApi) return;
+    const progress = emblaApi.scrollProgress();
+    const snaps = emblaApi.scrollSnapList();
+
+    const nextValues = snaps.map((snap) => {
+      const diffToTarget = snap - progress;
+      return diffToTarget * -35;
+    });
+
+    setParallaxValues(nextValues);
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+  }, [emblaApi]);
+
+  const scrollPrev = useCallback(() => {
+    if (!emblaApi) return;
+    emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (!emblaApi) return;
+    emblaApi.scrollNext();
+  }, [emblaApi]);
+
+  const scrollTo = useCallback(
+    (index: number) => {
+      if (!emblaApi) return;
+      emblaApi.scrollTo(index);
+    },
+    [emblaApi]
+  );
+
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setItemsPerView(1);
-      } else if (window.innerWidth < 1024) {
-        setItemsPerView(2);
-      } else {
-        setItemsPerView(3);
-      }
+    if (!emblaApi) return;
+
+    setScrollSnaps(emblaApi.scrollSnapList());
+    updateParallax();
+
+    emblaApi.on('scroll', updateParallax);
+    emblaApi.on('select', updateParallax);
+    emblaApi.on('reInit', updateParallax);
+
+    return () => {
+      emblaApi.off('scroll', updateParallax);
+      emblaApi.off('select', updateParallax);
+      emblaApi.off('reInit', updateParallax);
     };
+  }, [emblaApi, updateParallax]);
 
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  const maxIndex = Math.max(0, newsData.length - itemsPerView);
-
-  const goNext = () => {
-    setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
-  };
-
-  const goPrev = () => {
-    setCurrentIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
+  const getParallaxStyle = (index: number) => {
+    const fallback = 0;
+    const value = parallaxValues[index] ?? fallback;
+    return {
+      transform: `scale(1.08) translateX(${value}%)`,
+    };
   };
 
   return (
@@ -51,26 +88,14 @@ export default function NewsCarousel() {
 
         {/* Carousel */}
         <div className="relative">
-          {/* News Grid */}
-          <div className="overflow-hidden">
-            <div
-              className="flex transition-transform duration-500 ease-out gap-6"
-              style={{
-                transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)`,
-              }}
-            >
-              {newsData.map((news) => (
+          <div className="overflow-hidden" ref={emblaRef}>
+            <div className="-ml-4 flex touch-pan-y">
+              {newsData.map((news, index) => (
                 <div
                   key={news.id}
-                  className={`flex-shrink-0 ${
-                    itemsPerView === 1
-                      ? 'w-full'
-                      : itemsPerView === 2
-                      ? 'w-1/2'
-                      : 'w-1/3'
-                  }`}
+                  className="min-w-0 flex-[0_0_100%] pl-4 md:flex-[0_0_50%] lg:flex-[0_0_33.333%]"
                 >
-                  <NewsCard news={news} />
+                  <NewsCard news={news} imageStyle={getParallaxStyle(index)} />
                 </div>
               ))}
             </div>
@@ -78,7 +103,7 @@ export default function NewsCarousel() {
 
           {/* Navigation Buttons */}
           <button
-            onClick={goPrev}
+            onClick={scrollPrev}
             className="absolute left-2 top-1/2 z-10 -translate-y-1/2 rounded-full bg-gold p-2 text-navy-dark transition-all duration-200 hover:scale-110 hover:bg-cream sm:left-0 sm:-translate-x-12"
             aria-label="Noticia anterior"
           >
@@ -96,7 +121,7 @@ export default function NewsCarousel() {
           </button>
 
           <button
-            onClick={goNext}
+            onClick={scrollNext}
             className="absolute right-2 top-1/2 z-10 -translate-y-1/2 rounded-full bg-gold p-2 text-navy-dark transition-all duration-200 hover:scale-110 hover:bg-cream sm:right-0 sm:translate-x-12"
             aria-label="Proxima noticia"
           >
@@ -115,12 +140,12 @@ export default function NewsCarousel() {
 
           {/* Dots Indicator */}
           <div className="flex justify-center gap-2 mt-8">
-            {Array.from({ length: maxIndex + 1 }).map((_, index) => (
+            {scrollSnaps.map((_, index) => (
               <button
                 key={index}
-                onClick={() => setCurrentIndex(index)}
+                onClick={() => scrollTo(index)}
                 className={`h-2 rounded-full transition-all duration-300 ${
-                  index === currentIndex
+                  index === selectedIndex
                     ? 'bg-gold w-8'
                     : 'bg-gold/40 w-2 hover:bg-gold/60'
                 }`}

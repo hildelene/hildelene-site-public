@@ -1,10 +1,12 @@
 import { NewsItem } from '../data/newsData';
+import type { CSSProperties } from 'react';
 
 interface NewsCardProps {
   news: NewsItem;
+  imageStyle?: CSSProperties;
 }
 
-export default function NewsCard({ news }: NewsCardProps) {
+export default function NewsCard({ news, imageStyle }: NewsCardProps) {
   return (
     <div className="bg-navy-dark border border-gold/20 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 h-full flex flex-col group">
       {/* Image Container */}
@@ -13,6 +15,7 @@ export default function NewsCard({ news }: NewsCardProps) {
           src={news.image}
           alt={news.title}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+          style={imageStyle}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
