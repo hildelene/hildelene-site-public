@@ -18,7 +18,7 @@ export default function Hero() {
 
   return (
     <section id="home" className="hero">
-      <Background scrollY={scrollY} />
+      <Background />
 
       <div
         className="heroContent"
