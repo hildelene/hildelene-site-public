@@ -79,7 +79,7 @@ export default function NewsCarousel() {
           {/* Navigation Buttons */}
           <button
             onClick={goPrev}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 sm:-translate-x-12 z-10 p-2 bg-gold text-navy-dark rounded-full hover:bg-cream transition-all duration-200 transform hover:scale-110"
+            className="absolute left-2 top-1/2 z-10 -translate-y-1/2 rounded-full bg-gold p-2 text-navy-dark transition-all duration-200 hover:scale-110 hover:bg-cream sm:left-0 sm:-translate-x-12"
             aria-label="Noticia anterior"
           >
             <svg
@@ -97,7 +97,7 @@ export default function NewsCarousel() {
 
           <button
             onClick={goNext}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 sm:translate-x-12 z-10 p-2 bg-gold text-navy-dark rounded-full hover:bg-cream transition-all duration-200 transform hover:scale-110"
+            className="absolute right-2 top-1/2 z-10 -translate-y-1/2 rounded-full bg-gold p-2 text-navy-dark transition-all duration-200 hover:scale-110 hover:bg-cream sm:right-0 sm:translate-x-12"
             aria-label="Proxima noticia"
           >
             <svg
