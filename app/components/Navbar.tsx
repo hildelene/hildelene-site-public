@@ -35,31 +35,31 @@ export default function Navbar() {
               href="#home" 
               className="text-cream hover:text-gold transition-colors"
             >
-              Home
+              Início
             </Link>
             <Link 
               href="#about" 
               className="text-cream hover:text-gold transition-colors"
             >
-              About
+              Sobre
             </Link>
             <Link 
               href="#projects" 
               className="text-cream hover:text-gold transition-colors"
             >
-              Projects
+              Projetos
             </Link>
             <Link 
               href="#news" 
               className="text-cream hover:text-gold transition-colors"
             >
-              News
+              Notícias
             </Link>
             <Link 
               href="#contact" 
               className="text-cream hover:text-gold transition-colors"
             >
-              Contact
+              Contato
             </Link>
           </div>
 
@@ -68,7 +68,7 @@ export default function Navbar() {
             href="#" 
             className="hidden md:block px-6 py-2 bg-gold text-navy-dark font-semibold rounded-lg hover:bg-cream transition-all duration-200 transform hover:scale-105"
           >
-            Team Area
+            Área da Equipe
           </a>
 
           {/* Mobile Menu Button */}
@@ -99,37 +99,37 @@ export default function Navbar() {
               href="#home" 
               className="block px-3 py-2 text-cream hover:text-gold hover:bg-navy-dark/50 rounded-md transition-colors"
             >
-              Home
+              Início
             </Link>
             <Link 
               href="#about" 
               className="block px-3 py-2 text-cream hover:text-gold hover:bg-navy-dark/50 rounded-md transition-colors"
             >
-              About
+              Sobre
             </Link>
             <Link 
               href="#projects" 
               className="block px-3 py-2 text-cream hover:text-gold hover:bg-navy-dark/50 rounded-md transition-colors"
             >
-              Projects
+              Projetos
             </Link>
             <Link 
               href="#news" 
               className="block px-3 py-2 text-cream hover:text-gold hover:bg-navy-dark/50 rounded-md transition-colors"
             >
-              News
+              Notícias
             </Link>
             <Link 
               href="#contact" 
               className="block px-3 py-2 text-cream hover:text-gold hover:bg-navy-dark/50 rounded-md transition-colors"
             >
-              Contact
+              Contato
             </Link>
             <a 
               href="#"
               className="block px-3 py-2 bg-gold text-navy-dark font-semibold rounded-md hover:bg-cream transition-all duration-200 text-center"
             >
-              Team Area
+              Área da Equipe
             </a>
           </div>
         )}

@@ -11,11 +11,11 @@ export default function Projects() {
         {/* Header */}
         <div className="mb-12 text-center animate-fade-in">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-cream mb-4">
-            Our <span className="text-gold">Projects</span>
+            Nossos <span className="text-gold">Projetos</span>
           </h2>
           <p className="text-cream/70 max-w-2xl mx-auto">
-            Showcasing our commitment to engineering excellence through diverse and innovative
-            maritime projects.
+            Apresentamos nosso compromisso com a excelência em engenharia por meio de projetos
+            marítimos diversos e inovadores.
           </p>
           <div className="h-1 w-20 bg-gradient-to-r from-gold to-transparent mx-auto mt-6" />
         </div>

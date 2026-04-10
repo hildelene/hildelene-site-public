@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="animate-fade-in">
           {/* Subtitle */}
           <p className="text-gold text-lg font-semibold mb-4 tracking-widest uppercase">
-            Welcome to Excellence in Naval Engineering
+            Bem-vindo à excelência em engenharia naval
           </p>
 
           {/* Main Title */}
@@ -27,18 +27,18 @@ export default function Hero() {
 
           {/* Description */}
           <p className="text-cream/80 text-lg sm:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
-            Pioneering the future of naval engineering through innovation, precision, and
-            technological excellence. A team dedicated to pushing boundaries and proving
-            that extraordinary achievements are possible through collaboration and vision.
+            Impulsionamos o futuro da engenharia naval com inovação, precisão e excelência
+            tecnológica. Somos uma equipe dedicada a superar limites e demonstrar que conquistas
+            extraordinárias nascem da colaboração e de uma visão clara.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button className="px-8 py-3 bg-gold text-navy-dark font-bold rounded-lg hover:bg-cream transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl">
-              Learn More
+              Saiba mais
             </button>
             <button className="px-8 py-3 border-2 border-gold text-gold font-bold rounded-lg hover:bg-gold hover:text-navy-dark transition-all duration-200 transform hover:scale-105">
-              Become a Sponsor
+              Seja um patrocinador
             </button>
           </div>
         </div>

@@ -9,46 +9,45 @@ export default function About() {
           {/* Content */}
           <div className="animate-fade-in">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-cream mb-6">
-              About <span className="text-gold">Hildelene</span>
+              Sobre a <span className="text-gold">Hildelene</span>
             </h2>
 
             <div className="h-1 w-20 bg-gradient-to-r from-gold to-transparent mb-8" />
 
             <p className="text-cream/80 text-lg mb-6 leading-relaxed">
-              Hildelene Nautidesign is a team of passionate engineers, designers, and innovators
-              dedicated to advancing naval engineering. We combine cutting-edge technology with
-              traditional maritime expertise to create vessels that push the boundaries of what&apos;s
-              possible.
+              A Hildelene Nautidesign é uma equipe de engenheiros, projetistas e inovadores
+              apaixonados pelo avanço da engenharia naval. Unimos tecnologia de ponta e
+              conhecimento marítimo para criar embarcações que ampliam os limites do possível.
             </p>
 
             <p className="text-cream/80 text-lg mb-6 leading-relaxed">
-              Our mission is to demonstrate excellence in engineering through innovation,
-              collaboration, and precision. Every project we undertake represents our commitment
-              to sustainability, performance, and technological advancement in the naval industry.
+              Nossa missão é demonstrar excelência em engenharia por meio de inovação,
+              colaboração e precisão. Cada projeto representa nosso compromisso com sustentabilidade,
+              desempenho e avanço tecnológico no setor naval.
             </p>
 
             <p className="text-cream/80 text-lg mb-8 leading-relaxed">
-              From design and simulation to testing and implementation, our team brings together
-              diverse expertise to solve complex challenges and create solutions that matter.
+              Do projeto e da simulação aos testes e à implementação, nossa equipe reúne
+              competências diversas para resolver desafios complexos e criar soluções relevantes.
             </p>
 
             {/* Core Values */}
             <div className="grid grid-cols-2 gap-4">
               <div className="p-4 bg-navy-dark/50 border border-gold/20 rounded-lg hover:border-gold transition-colors">
                 <h3 className="text-gold font-bold mb-2">Innovation</h3>
-                <p className="text-cream/70 text-sm">Pushing boundaries with breakthrough ideas</p>
+                <p className="text-cream/70 text-sm">Superando limites com ideias transformadoras</p>
               </div>
               <div className="p-4 bg-navy-dark/50 border border-gold/20 rounded-lg hover:border-gold transition-colors">
-                <h3 className="text-gold font-bold mb-2">Excellence</h3>
-                <p className="text-cream/70 text-sm">Pursuing perfection in every detail</p>
+                <h3 className="text-gold font-bold mb-2">Excelência</h3>
+                <p className="text-cream/70 text-sm">Buscando precisão em cada detalhe</p>
               </div>
               <div className="p-4 bg-navy-dark/50 border border-gold/20 rounded-lg hover:border-gold transition-colors">
-                <h3 className="text-gold font-bold mb-2">Collaboration</h3>
-                <p className="text-cream/70 text-sm">Achieving more together as one team</p>
+                <h3 className="text-gold font-bold mb-2">Colaboração</h3>
+                <p className="text-cream/70 text-sm">Alcançando mais juntos, como um só time</p>
               </div>
               <div className="p-4 bg-navy-dark/50 border border-gold/20 rounded-lg hover:border-gold transition-colors">
-                <h3 className="text-gold font-bold mb-2">Sustainability</h3>
-                <p className="text-cream/70 text-sm">Building responsible maritime future</p>
+                <h3 className="text-gold font-bold mb-2">Sustentabilidade</h3>
+                <p className="text-cream/70 text-sm">Construindo um futuro marítimo responsável</p>
               </div>
             </div>
           </div>
@@ -67,7 +66,7 @@ export default function About() {
             {/* Floating Stats */}
             <div className="absolute -bottom-6 -right-6 bg-gold text-navy-dark p-4 rounded-lg shadow-xl">
               <div className="text-3xl font-bold">50+</div>
-              <div className="text-sm font-semibold">Team Members</div>
+              <div className="text-sm font-semibold">Integrantes</div>
             </div>
           </div>
         </div>

@@ -13,15 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Hildelene Nautidesign - Naval Engineering Excellence',
+  title: 'Hildelene Nautidesign - Excelência em Engenharia Naval',
   description:
-    'Pioneering the future of naval engineering through innovation, precision, and technological excellence. Hildelene Nautidesign is a dedicated team committed to pushing boundaries in maritime technology.',
+    'Hildelene Nautidesign é uma equipe dedicada a impulsionar a engenharia naval com inovação, precisão e excelência tecnológica.',
   keywords:
-    'naval engineering, maritime technology, boat design, competition, innovation',
+    'engenharia naval, tecnologia marítima, design de embarcações, competição, inovação',
   authors: [{ name: 'Hildelene Nautidesign' }],
   openGraph: {
     title: 'Hildelene Nautidesign',
-    description: 'Excellence in Naval Engineering',
+    description: 'Excelência em engenharia naval',
     type: 'website',
   },
 };
@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="pt-BR"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col">{children}</body>

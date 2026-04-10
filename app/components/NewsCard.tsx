@@ -28,12 +28,12 @@ export default function NewsCard({ news }: NewsCardProps) {
           {news.description}
         </p>
 
-        {/* Read More Link */}
+        {/* Link para leitura */}
         <a
           href={news.link || '#'}
           className="text-gold font-semibold hover:text-cream transition-colors inline-flex items-center group/link"
         >
-          Read more
+          Leia mais
           <span className="ml-2 group-hover/link:translate-x-1 transition-transform">→</span>
         </a>
       </div>

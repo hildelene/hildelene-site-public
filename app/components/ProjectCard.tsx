@@ -32,13 +32,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {project.description}
         </p>
 
-        {/* Learn More Link */}
+        {/* Link para detalhes */}
         <div className="mt-4 pt-4 border-t border-gold/20">
           <a
             href="#"
             className="text-gold font-semibold hover:text-cream transition-colors inline-flex items-center group/link"
           >
-            Learn more
+            Saiba mais
             <span className="ml-2 group-hover/link:translate-x-1 transition-transform">→</span>
           </a>
         </div>

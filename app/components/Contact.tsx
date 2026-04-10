@@ -46,10 +46,10 @@ export default function Contact() {
         {/* Header */}
         <div className="mb-12 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-cream mb-4">
-            Get In <span className="text-gold">Touch</span>
+            Entre em <span className="text-gold">Contato</span>
           </h2>
           <p className="text-cream/70 max-w-2xl mx-auto">
-            Have questions or interested in partnerships? We&apos;d love to hear from you.
+            Tem dúvidas ou interesse em parceria? Será um prazer falar com você.
           </p>
           <div className="h-1 w-20 bg-gradient-to-r from-gold to-transparent mx-auto mt-6" />
         </div>
@@ -60,20 +60,20 @@ export default function Contact() {
             {/* Email */}
             <div>
               <h3 className="text-gold font-bold text-lg mb-2">Email</h3>
-              <p className="text-cream/70">info@hildelenenautidesign.com</p>
-              <p className="text-cream/50 text-sm mt-1">Available 24/7 for inquiries</p>
+              <p className="text-cream/70">contato@hildelenenautidesign.com</p>
+              <p className="text-cream/50 text-sm mt-1">Disponível para atendimento e parcerias</p>
             </div>
 
             {/* Address */}
             <div>
               <h3 className="text-gold font-bold text-lg mb-2">Location</h3>
-              <p className="text-cream/70">Naval Engineering Center</p>
-              <p className="text-cream/50 text-sm">Maritime District</p>
+              <p className="text-cream/70">Centro de Engenharia Naval</p>
+              <p className="text-cream/50 text-sm">Distrito Marítimo</p>
             </div>
 
             {/* Social Media */}
             <div>
-              <h3 className="text-gold font-bold text-lg mb-4">Follow Us</h3>
+              <h3 className="text-gold font-bold text-lg mb-4">Siga-nos</h3>
               <div className="flex gap-4">
                 {['LinkedIn', 'Twitter', 'Instagram', 'Facebook'].map(
                   (social) => (
@@ -98,9 +98,9 @@ export default function Contact() {
 
             {/* Quick Links */}
             <div>
-              <h3 className="text-gold font-bold text-lg mb-4">Quick Links</h3>
+              <h3 className="text-gold font-bold text-lg mb-4">Links rápidos</h3>
               <ul className="space-y-2">
-                {['Team Area', 'Documentation', 'FAQ', 'Careers'].map(
+                {['Área da Equipe', 'Documentação', 'Perguntas frequentes', 'Carreiras'].map(
                   (link) => (
                     <li key={link}>
                       <a
@@ -125,7 +125,7 @@ export default function Contact() {
               {/* Name */}
               <div>
                 <label htmlFor="name" className="block text-gold font-semibold mb-2">
-                  Name
+                  Nome
                 </label>
                 <input
                   type="text"
@@ -135,14 +135,14 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-2 bg-navy-dark border border-gold/30 rounded-lg text-cream placeholder-cream/50 focus:outline-none focus:border-gold transition-colors"
-                  placeholder="Your name"
+                  placeholder="Seu nome"
                 />
               </div>
 
               {/* Email */}
               <div>
                 <label htmlFor="email" className="block text-gold font-semibold mb-2">
-                  Email
+                  E-mail
                 </label>
                 <input
                   type="email"
@@ -152,14 +152,14 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-2 bg-navy-dark border border-gold/30 rounded-lg text-cream placeholder-cream/50 focus:outline-none focus:border-gold transition-colors"
-                  placeholder="your@email.com"
+                  placeholder="seu@email.com"
                 />
               </div>
 
               {/* Subject */}
               <div>
                 <label htmlFor="subject" className="block text-gold font-semibold mb-2">
-                  Subject
+                  Assunto
                 </label>
                 <select
                   id="subject"
@@ -170,20 +170,20 @@ export default function Contact() {
                   className="w-full px-4 py-2 bg-navy-dark border border-gold/30 rounded-lg text-cream focus:outline-none focus:border-gold transition-colors"
                 >
                   <option value="" disabled>
-                    Select a subject
+                    Selecione um assunto
                   </option>
-                  <option value="sponsorship">Sponsorship Inquiry</option>
-                  <option value="partnership">Partnership Opportunity</option>
-                  <option value="technical">Technical Question</option>
-                  <option value="media">Media Request</option>
-                  <option value="other">Other</option>
+                  <option value="sponsorship">Proposta de patrocínio</option>
+                  <option value="partnership">Oportunidade de parceria</option>
+                  <option value="technical">Dúvida técnica</option>
+                  <option value="media">Solicitação de imprensa</option>
+                  <option value="other">Outro</option>
                 </select>
               </div>
 
               {/* Message */}
               <div>
                 <label htmlFor="message" className="block text-gold font-semibold mb-2">
-                  Message
+                  Mensagem
                 </label>
                 <textarea
                   id="message"
@@ -193,7 +193,7 @@ export default function Contact() {
                   required
                   rows={5}
                   className="w-full px-4 py-2 bg-navy-dark border border-gold/30 rounded-lg text-cream placeholder-cream/50 focus:outline-none focus:border-gold transition-colors resize-none"
-                  placeholder="Your message here..."
+                  placeholder="Escreva sua mensagem aqui..."
                 />
               </div>
 
@@ -202,12 +202,12 @@ export default function Contact() {
                 type="submit"
                 className="w-full px-6 py-3 bg-gold text-navy-dark font-bold rounded-lg hover:bg-cream transition-all duration-200 transform hover:scale-105 shadow-lg"
               >
-                {isSubmitted ? '✓ Message Sent!' : 'Send Message'}
+                {isSubmitted ? '✓ Mensagem enviada!' : 'Enviar mensagem'}
               </button>
 
               {isSubmitted && (
                 <p className="text-gold text-center text-sm">
-                  Thank you for your message. We&apos;ll be in touch soon!
+                  Obrigado pela mensagem. Responderemos em breve!
                 </p>
               )}
             </form>

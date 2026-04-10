@@ -15,19 +15,19 @@ export default function Footer() {
               Hildelene Nautidesign
             </h3>
             <p className="text-cream/70 text-sm">
-              Engineering excellence in naval innovation and maritime technology.
+              Excelência em inovação naval e tecnologia marítima.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-gold font-bold mb-4">Navigation</h4>
+            <h4 className="text-gold font-bold mb-4">Navegação</h4>
             <ul className="space-y-2">
               {[
-                { name: 'Home', href: '#home' },
-                { name: 'About', href: '#about' },
-                { name: 'Projects', href: '#projects' },
-                { name: 'News', href: '#news' },
+                { name: 'Início', href: '#home' },
+                { name: 'Sobre', href: '#about' },
+                { name: 'Projetos', href: '#projects' },
+                { name: 'Notícias', href: '#news' },
               ].map((item) => (
                 <li key={item.name}>
                   <Link
@@ -43,13 +43,13 @@ export default function Footer() {
 
           {/* Resources */}
           <div>
-            <h4 className="text-gold font-bold mb-4">Resources</h4>
+            <h4 className="text-gold font-bold mb-4">Recursos</h4>
             <ul className="space-y-2">
               {[
-                { name: 'Team Area', href: '#' },
-                { name: 'Documentation', href: '#' },
+                { name: 'Área da Equipe', href: '#' },
+                { name: 'Documentação', href: '#' },
                 { name: 'Blog', href: '#' },
-                { name: 'Careers', href: '#' },
+                { name: 'Carreiras', href: '#' },
               ].map((item) => (
                 <li key={item.name}>
                   <Link
@@ -65,7 +65,7 @@ export default function Footer() {
 
           {/* Connect */}
           <div>
-            <h4 className="text-gold font-bold mb-4">Connect</h4>
+            <h4 className="text-gold font-bold mb-4">Conecte-se</h4>
             <ul className="space-y-2">
               {[
                 { name: 'LinkedIn', href: '#' },
@@ -92,7 +92,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-cream/50 text-sm">
-            &copy; {currentYear} Hildelene Nautidesign. All rights reserved.
+            &copy; {currentYear} Hildelene Nautidesign. Todos os direitos reservados.
           </div>
 
           <div className="flex gap-6">
@@ -100,19 +100,19 @@ export default function Footer() {
               href="#"
               className="text-cream/50 hover:text-gold transition-colors text-sm"
             >
-              Privacy Policy
+              Política de Privacidade
             </Link>
             <Link
               href="#"
               className="text-cream/50 hover:text-gold transition-colors text-sm"
             >
-              Terms of Service
+              Termos de Uso
             </Link>
             <Link
               href="#"
               className="text-cream/50 hover:text-gold transition-colors text-sm"
             >
-              Sitemap
+              Mapa do Site
             </Link>
           </div>
         </div>
@@ -122,7 +122,7 @@ export default function Footer() {
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="p-2 bg-gold/10 border border-gold/30 rounded-full text-gold hover:bg-gold hover:text-navy-dark transition-all duration-200"
-            aria-label="Scroll to top"
+            aria-label="Voltar ao topo"
           >
             <svg
               className="w-6 h-6"

@@ -8,10 +8,10 @@ export default function Sponsors() {
         {/* Header */}
         <div className="mb-12 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-cream mb-4">
-            Our <span className="text-gold">Sponsors</span>
+            Nossos <span className="text-gold">Patrocinadores</span>
           </h2>
           <p className="text-cream/70 max-w-2xl mx-auto">
-            Thank you to our valued partners who support innovation in naval engineering.
+            Agradecemos aos parceiros que apoiam a inovação em engenharia naval.
           </p>
           <div className="h-1 w-20 bg-gradient-to-r from-gold to-transparent mx-auto mt-6" />
         </div>
@@ -34,15 +34,15 @@ export default function Sponsors() {
         {/* Call to Action */}
         <div className="bg-gradient-to-r from-gold/10 to-gold/5 border border-gold/20 rounded-lg p-12 text-center">
           <h3 className="text-2xl sm:text-3xl font-bold text-cream mb-4">
-            Become a <span className="text-gold">Sponsor</span>
+            Torne-se um <span className="text-gold">Patrocinador</span>
           </h3>
           <p className="text-cream/70 max-w-2xl mx-auto mb-8">
-            Partner with Hildelene Nautidesign and support the next generation of naval innovation.
-            Our sponsorship programs offer unique opportunities to align your brand with excellence
-            and cutting-edge engineering.
+            Faça parceria com a Hildelene Nautidesign e apoie a próxima geração da inovação naval.
+            Nossos programas de patrocínio oferecem oportunidades únicas para associar sua marca à
+            excelência e à engenharia de ponta.
           </p>
           <button className="px-8 py-3 bg-gold text-navy-dark font-bold rounded-lg hover:bg-cream transition-all duration-200 transform hover:scale-105">
-            Sponsorship Package
+            Proposta de patrocínio
           </button>
         </div>
 
