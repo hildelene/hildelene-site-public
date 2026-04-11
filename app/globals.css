@@ -326,8 +326,6 @@ a {
   z-index: 20;
   text-align: center;
   padding: 20px;
-  max-width: 900px;
-  width: 100%;
 }
 
 @keyframes waveDrift {
@@ -345,9 +343,8 @@ a {
 .hero h1 {
   font-size: 2.2rem;
   color: white;
+  line-height: 0.8;
   margin-bottom: 10px;
-  font-weight: 600;
-  letter-spacing: -0.5px;
 }
 
 @media (min-width: 768px) {
@@ -392,17 +389,17 @@ a {
 
 .secondary {
   border-radius: 8px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  padding: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
   background: rgba(0, 0, 0, 0.8);
   border: 1px solid var(--gold);
+  vertical-align: middle;
 }
 
 .secondary:hover {
   transform: translateY(-2px);
-  background: rgba(242, 190, 115, 0.1);
-  border-color: var(--gold);
   box-shadow: 0 0 25px rgba(242, 190, 115, 0.4);
 }
 
