@@ -89,8 +89,11 @@ export default function Background() {
 
   return (
     <div className="background">
+      <div className="sky" />
       <canvas ref={canvasRef} className="canvas" />
       <div className="ocean" />
+      <div className="wave waveBack" />
+      <div className="wave waveFront" />
       <div className="gradient" />
     </div>
   );
