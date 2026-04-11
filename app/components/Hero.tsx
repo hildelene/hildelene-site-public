@@ -1,11 +1,9 @@
 'use client';
 
-import { useScrollPosition } from '@/app/hooks/useScrollPosition';
 import Background from './Background';
 import { useRef } from 'react';
 
 export default function Hero() {
-  const scrollY = useScrollPosition();
   const carouselRef = useRef<HTMLDivElement>(null);
 
   const scrollCarousel = (dir: number) => {
