@@ -280,19 +280,6 @@ a {
   letter-spacing: 0.5px;
 }
 
-.primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 30px rgba(0, 191, 255, 0.6);
-  background: #00a8d8;
-}
-
-.secondary {
-  background: transparent;
-  border: 2px solid rgba(242, 190, 115, 0.6);
-  color: #f2be73;
-  box-shadow: 0 0 15px rgba(242, 190, 115, 0.2);
-}
-
 .secondary:hover {
   transform: translateY(-2px);
   background: rgba(242, 190, 115, 0.1);
