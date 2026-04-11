@@ -6,12 +6,6 @@ import { useEffect, useState } from 'react';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const mobileToggleClasses =
-    'inline-flex items-center justify-center rounded-md p-2 text-gold hover:bg-white/5 focus:outline-none md:hidden';
-
-  const contactButtonClasses =
-    'shrink-0 rounded-lg border border-gold/70 bg-gold/10 px-3 py-1.5 text-sm font-semibold text-gold transition-all duration-200 hover:scale-105 hover:bg-gold/20 sm:px-5 sm:py-2 sm:text-base';
-
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
@@ -24,8 +18,8 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 backdrop-blur-md">
-      <div className="max-w-7xl mx-6 sm:mx-auto px-2 sm:px-10 lg:px-12">
+    <nav className="navbar">
+      <div className="navbar-inner">
         <div className="flex h-16 items-center justify-between gap-3">
           {/* Logo */}
           <Link 
@@ -37,7 +31,7 @@ export default function Navbar() {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={mobileToggleClasses}
+            className="navbar-mobile-toggle"
             aria-label="Abrir menu"
           >
             <svg
@@ -59,31 +53,31 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <Link 
               href="#home" 
-              className="text-cream hover:text-gold transition-colors"
+              className="navbar-link"
             >
               Inicio
             </Link>
             <Link 
               href="#about" 
-              className="text-cream hover:text-gold transition-colors"
+              className="navbar-link"
             >
               Sobre
             </Link>
             <Link 
               href="#projects" 
-              className="text-cream hover:text-gold transition-colors"
+              className="navbar-link"
             >
               Projetos
             </Link>
             <Link 
               href="#news" 
-              className="text-cream hover:text-gold transition-colors"
+              className="navbar-link"
             >
               Noticias
             </Link>
             <Link 
               href="#contact" 
-              className="text-cream hover:text-gold transition-colors"
+              className="navbar-link"
             >
               Contato
             </Link>
@@ -92,7 +86,7 @@ export default function Navbar() {
           {/* Team Area Button */}
           <a 
             href="#" 
-            className={contactButtonClasses}
+            className="navbar-contact-btn"
           >
             Contato
           </a>
@@ -100,40 +94,40 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden pb-4 space-y-2 animate-fade-in">
+          <div className="navbar-mobile-menu md:hidden">
             <Link 
               href="#home" 
-              className="block px-3 py-2 text-cream hover:text-gold hover:bg-navy-dark/50 rounded-md transition-colors"
+              className="navbar-mobile-link"
             >
               Inicio
             </Link>
             <Link 
               href="#about" 
-              className="block px-3 py-2 text-cream hover:text-gold hover:bg-navy-dark/50 rounded-md transition-colors"
+              className="navbar-mobile-link"
             >
               Sobre
             </Link>
             <Link 
               href="#projects" 
-              className="block px-3 py-2 text-cream hover:text-gold hover:bg-navy-dark/50 rounded-md transition-colors"
+              className="navbar-mobile-link"
             >
               Projetos
             </Link>
             <Link 
               href="#news" 
-              className="block px-3 py-2 text-cream hover:text-gold hover:bg-navy-dark/50 rounded-md transition-colors"
+              className="navbar-mobile-link"
             >
               Noticias
             </Link>
             <Link 
               href="#contact" 
-              className="block px-3 py-2 text-cream hover:text-gold hover:bg-navy-dark/50 rounded-md transition-colors"
+              className="navbar-mobile-link"
             >
               Contato
             </Link>
             <a 
               href="#"
-              className="block px-3 py-2 bg-gold text-navy-dark font-semibold rounded-md hover:bg-cream transition-all duration-200 text-center"
+              className="navbar-mobile-team-btn"
             >
               Area da Equipe
             </a>
