@@ -369,7 +369,7 @@ a {
 
 .hero p {
   margin-top: 15px;
-  color: #ccc;
+  color: var(--light-gray);
   font-size: 0.8rem;
   margin-left: auto;
   margin-right: auto;
@@ -391,16 +391,12 @@ a {
 }
 
 .secondary {
-  padding: 12px 28px;
   border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.8rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   border: 1px solid var(--gold);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
 }
 
 .secondary:hover {
