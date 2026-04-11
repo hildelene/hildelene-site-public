@@ -21,15 +21,15 @@ export default function Hero() {
       <div className="heroContent">
         {/* Parallax effect on content */}
         <h1>
-          Do <span className="gold">Laboratório à Indústria Naval</span>
+          Do <span className="gold">Laboratório</span> à
+          <span className="gold">Indústria Naval</span>
         </h1>
 
         <p>Conheça os universitários que superam desafios com projetos inovadores, comprometimento e alta performance</p>
 
         <div className="buttons">
-          <button className="primary">Acompanhar</button>
-          <button className="secondary">Participar</button>
-          <button className="secondary">Cooperar</button>
+          <button className="secondary">Participe</button>
+          <button className="secondary">Seja parceiro</button>
         </div>
 
         {/* CAROUSEL */}
