@@ -25,11 +25,12 @@ export default function Hero() {
           <span className="gold"> Indústria</span> Naval
         </h1>
 
-        <p>Conheça os universitários que superam desafios com projetos inovadores por meio da metodologia acadêmica e alta performance. Abrangendo a comunidade acadêmica e servindo de berço para o desenvolvimento de excelentes profissionais, criativos e capacitados na resolução de problemas, que serão peças-chave que moldarão o futuro da indústria naval. </p>
+        <p>Conheça os universitários que superam desafios com projetos inovadores por meio da metodologia acadêmica somado à alta performance. Abrangendo toda a comunidade acadêmica, servimos como berço do desenvolvimento de excelentes profissionais, criativos e capacitados na resolução de problemas, que serão cruciais para o futuro da indústria naval. </p>
 
         <div className="buttons">
-          <button className="secondary">Participe</button>
-          <button className="secondary">Seja parceiro</button>
+          <button className="secondary">Faça parte</button>
+          <button className="secondary">Coopere</button>
+          <button className="secondary">Seja patrocinador</button>
         </div>
 
         {/* CAROUSEL */}

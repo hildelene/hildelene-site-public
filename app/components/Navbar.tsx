@@ -88,7 +88,7 @@ export default function Navbar() {
             href="#" 
             className="navbar-contact-btn"
           >
-            Contato
+            Intranet
           </a>
         </div>
 
