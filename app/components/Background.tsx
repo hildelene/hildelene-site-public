@@ -22,11 +22,12 @@ export default function Background() {
     resize();
 
     // Criar partículas
-    particles = Array.from({ length: 80 }).map(() => ({
+    particles = Array.from({ length: 100 }).map(() => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
-      vx: (Math.random() - 0.5) * 0.3,
+      vx: (Math.random() - 0.5) * 0.5,
       vy: (Math.random() - 0.5) * 0.3,
+      radius: Math.random() * 1.5 + 1,
     }));
 
     const draw = () => {
@@ -37,17 +38,24 @@ export default function Background() {
         p.x += p.vx;
         p.y += p.vy;
 
+        // Bounce nas bordas
         if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
         if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
 
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, 1.5, 0, Math.PI * 2);
+        // Manter dentro da tela
+        p.x = Math.max(0, Math.min(canvas.width, p.x));
+        p.y = Math.max(0, Math.min(canvas.height, p.y));
 
-        // Azul + chance de dourado raro
-        ctx.fillStyle =
-          Math.random() < 0.015
-            ? 'rgba(255, 200, 120, 0.9)'
-            : 'rgba(0, 180, 255, 0.6)';
+        // Desenhar partícula com mais visibilidade
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+
+        // Azul + chance de dourado
+        if (Math.random() < 0.02) {
+          ctx.fillStyle = 'rgba(255, 200, 100, 0.95)';
+        } else {
+          ctx.fillStyle = 'rgba(100, 220, 255, 0.9)';
+        }
 
         ctx.fill();
       });
@@ -59,11 +67,12 @@ export default function Background() {
           const dy = particles[i].y - particles[j].y;
           const dist = Math.sqrt(dx * dx + dy * dy);
 
-          if (dist < 120) {
+          if (dist < 100) {
+            const opacity = (1 - dist / 100) * 0.4;
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = 'rgba(0, 150, 255, 0.08)';
+            ctx.strokeStyle = `rgba(100, 200, 255, ${opacity})`;
             ctx.stroke();
           }
         }
