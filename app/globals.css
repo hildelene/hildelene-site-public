@@ -261,16 +261,12 @@ a {
 .buttons {
   margin-top: 30px;
   padding: 16px;
-  background: rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(242, 190, 115, 0.18);
-  border-radius: 16px;
   display: flex;
   gap: 15px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.primary,
 .secondary {
   padding: 12px 28px;
   border-radius: 8px;
@@ -278,15 +274,10 @@ a {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  border: none;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid #f2be73;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-}
-
-.primary {
-  background: #00bfff;
-  color: white;
-  box-shadow: 0 0 20px rgba(0, 191, 255, 0.4);
 }
 
 .primary:hover {
