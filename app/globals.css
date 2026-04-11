@@ -344,7 +344,7 @@ a {
   font-size: 2.2rem;
   color: white;
   line-height: 0.8;
-  margin-bottom: 10px;
+  padding:2rem;
 }
 
 @media (min-width: 768px) {
@@ -362,6 +362,14 @@ a {
 .gold {
   color: var(--gold);
   display: inline;
+}
+
+.hero-divider {
+  width: 60px;
+  height: 2px;
+  margin: 1.5rem auto;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--gold) 50%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.6;
 }
 
 .hero p {
