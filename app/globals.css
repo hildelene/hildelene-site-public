@@ -323,8 +323,10 @@ a {
 
 .heroContent {
   position: relative;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  z-index: 20;
+  width: min(1200px, calc(100% - 1.5rem));
+  margin-inline: auto;
+  text-align: center;
 }
 
 @keyframes waveDrift {
@@ -416,6 +418,7 @@ a {
   align-items: center;
   gap: 15px;
   justify-content: center;
+  width: 100%;
 }
 
 .carouselBtn {
