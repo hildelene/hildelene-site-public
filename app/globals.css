@@ -103,7 +103,7 @@ a {
   height: 100%;
   z-index: 0;
   overflow: hidden;
-  background: #03050a;
+  background: #020308;
 }
 
 .sky {
@@ -111,8 +111,11 @@ a {
   inset: 0;
   z-index: 0;
   background:
-    radial-gradient(120% 80% at 50% 5%, rgba(34, 84, 160, 0.45) 0%, rgba(7, 12, 24, 0.15) 48%, transparent 75%),
-    linear-gradient(to bottom, #081327 0%, #060d1c 40%, #03050a 100%);
+    radial-gradient(120% 70% at 50% 10%, rgba(20, 34, 58, 0.95) 0%, rgba(20, 34, 58, 0.45) 24%, transparent 58%),
+    radial-gradient(90% 55% at 18% 26%, rgba(18, 26, 40, 0.95) 0%, transparent 46%),
+    radial-gradient(85% 50% at 82% 28%, rgba(16, 24, 38, 0.92) 0%, transparent 44%),
+    radial-gradient(ellipse at 50% 58%, rgba(88, 108, 140, 0.08) 0%, transparent 42%),
+    linear-gradient(to bottom, #02050b 0%, #040816 44%, #020308 100%);
 }
 
 .canvas {
@@ -129,9 +132,11 @@ a {
   width: 100%;
   height: 50%;
   z-index: 3;
-  background: radial-gradient(ellipse at 50% 100%, rgba(0, 180, 255, 0.42) 0%, rgba(0, 88, 145, 0.32) 35%, rgba(0, 0, 0, 0) 72%);
-  filter: blur(18px);
-  opacity: 0.95;
+  background:
+    radial-gradient(ellipse at 50% 100%, rgba(9, 33, 58, 0.98) 0%, rgba(10, 42, 68, 0.86) 20%, rgba(0, 0, 0, 0) 68%),
+    linear-gradient(to top, rgba(4, 12, 24, 0.98) 0%, rgba(8, 21, 38, 0.9) 52%, rgba(2, 4, 8, 0) 100%);
+  filter: blur(14px);
+  opacity: 1;
 }
 
 .wave {
@@ -146,8 +151,8 @@ a {
   bottom: 7%;
   height: 17%;
   z-index: 4;
-  opacity: 0.45;
-  background: radial-gradient(120% 90% at 50% 110%, rgba(33, 171, 244, 0.7) 0%, rgba(33, 171, 244, 0.2) 55%, transparent 100%);
+  opacity: 0.28;
+  background: radial-gradient(120% 90% at 50% 110%, rgba(72, 128, 176, 0.6) 0%, rgba(72, 128, 176, 0.14) 55%, transparent 100%);
   animation: waveDrift 12s ease-in-out infinite;
 }
 
@@ -155,8 +160,8 @@ a {
   bottom: 2%;
   height: 22%;
   z-index: 5;
-  opacity: 0.55;
-  background: radial-gradient(120% 95% at 50% 110%, rgba(77, 210, 255, 0.85) 0%, rgba(77, 210, 255, 0.25) 58%, transparent 100%);
+  opacity: 0.34;
+  background: radial-gradient(120% 95% at 50% 110%, rgba(105, 170, 220, 0.65) 0%, rgba(105, 170, 220, 0.18) 58%, transparent 100%);
   animation: waveDrift 8s ease-in-out infinite reverse;
 }
 
@@ -167,8 +172,9 @@ a {
   height: 100%;
   z-index: 6;
   background:
-    radial-gradient(circle at 50% 24%, rgba(255, 255, 255, 0.1), transparent 54%),
-    radial-gradient(circle at 80% 68%, rgba(0, 175, 255, 0.2), transparent 60%);
+    radial-gradient(circle at 50% 22%, rgba(255, 255, 255, 0.04), transparent 52%),
+    radial-gradient(circle at 80% 68%, rgba(0, 140, 210, 0.08), transparent 58%),
+    linear-gradient(to bottom, rgba(2, 3, 8, 0.1) 0%, rgba(2, 3, 8, 0.35) 100%);
   pointer-events: none;
 }
 
