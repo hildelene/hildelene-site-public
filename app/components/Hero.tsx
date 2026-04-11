@@ -21,10 +21,10 @@ export default function Hero() {
       <div className="heroContent">
         {/* Parallax effect on content */}
         <h1>
-          Do zero ao <span className="gold">que realmente importa</span>
+          Do <span className="gold">Laboratório à Indústria Naval</span>
         </h1>
 
-        <p>Engenharia, tecnologia e comprometimento construindo algo maior.</p>
+        <p>Conheça os universitários que superam desafios com projetos inovadores, comprometimento e alta performance</p>
 
         <div className="buttons">
           <button className="primary">Acompanhar</button>
