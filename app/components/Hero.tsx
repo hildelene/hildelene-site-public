@@ -22,7 +22,7 @@ export default function Hero() {
         {/* Parallax effect on content */}
         <h1>
           Do <span className="gold">Laboratório</span> à
-          <span className="gold"> Indústria Naval</span>
+          <span className="gold"> Indústria</span> Naval
         </h1>
 
         <p>Conheça os universitários que superam desafios com projetos inovadores, comprometimento e alta performance</p>
