@@ -89,6 +89,7 @@ export default function Background() {
 
   return (
     <div className="background">
+      <div className="photoLayer" />
       <div className="sky" />
       <canvas ref={canvasRef} className="canvas" />
       <div className="ocean" />
