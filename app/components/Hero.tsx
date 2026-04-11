@@ -25,7 +25,7 @@ export default function Hero() {
           <span className="gold"> Indústria</span> Naval
         </h1>
 
-        <p>Conheça os universitários que superam desafios com projetos inovadores, comprometimento e alta performance</p>
+        <p>Conheça os universitários que superam desafios com projetos inovadores por meio da metodologia acadêmica e alta performance. Abrangendo a comunidade acadêmica e servindo de berço para o desenvolvimento de excelentes profissionais, criativos e capacitados na resolução de problemas, que serão peças-chave que moldarão o futuro da indústria naval. </p>
 
         <div className="buttons">
           <button className="secondary">Participe</button>
