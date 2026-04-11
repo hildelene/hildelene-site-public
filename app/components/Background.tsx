@@ -1,12 +1,9 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { useScrollPosition } from '@/app/hooks/useScrollPosition';
-import OceanWaves from './OceanWaves';
 
 export default function Background() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const scrollY = useScrollPosition();
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -24,7 +21,7 @@ export default function Background() {
 
     resize();
 
-    // Criar partículas (80 é bom para performance)
+    // Criar partículas
     particles = Array.from({ length: 80 }).map(() => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
@@ -40,24 +37,22 @@ export default function Background() {
         p.x += p.vx;
         p.y += p.vy;
 
-        // Bounce nas bordas
         if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
         if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
 
-        // Desenhar partícula
         ctx.beginPath();
         ctx.arc(p.x, p.y, 1.5, 0, Math.PI * 2);
 
         // Azul + chance de dourado raro
         ctx.fillStyle =
           Math.random() < 0.015
-            ? 'rgba(242, 190, 115, 0.9)'
+            ? 'rgba(255, 200, 120, 0.9)'
             : 'rgba(0, 180, 255, 0.6)';
 
         ctx.fill();
       });
 
-      // Desenhar conexões entre partículas próximas
+      // Desenhar conexões
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
           const dx = particles[i].x - particles[j].x;
@@ -83,40 +78,11 @@ export default function Background() {
     return () => window.removeEventListener('resize', resize);
   }, []);
 
-  // Opacity fade com scroll
-  const opacity = Math.max(1 - scrollY * 0.0005, 0.3);
-
   return (
-    <div className="background" style={{ opacity }}>
-      {/* Partículas - mais distantes */}
-      <canvas
-        ref={canvasRef}
-        className="canvas"
-        style={{
-          transform: `translateY(${scrollY * 0.1}px)`,
-        }}
-      />
-
-      {/* Ondas - médio */}
-      <div
-        style={{
-          transform: `translateY(${scrollY * 0.25}px)`,
-        }}
-      >
-        <OceanWaves scrollY={scrollY} />
-      </div>
-
-      {/* Gradiente - intermediário */}
-      <div
-        className="gradient"
-        style={{
-          transform: `translateY(${scrollY * 0.15}px)`,
-        }}
-      />
-
-      {/* Glows adicionais */}
-      <div className="glowLeft" />
-      <div className="glowRight" />
+    <div className="background">
+      <canvas ref={canvasRef} className="canvas" />
+      <div className="ocean" />
+      <div className="gradient" />
     </div>
   );
 }

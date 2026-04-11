@@ -20,12 +20,8 @@ export default function Hero() {
     <section id="home" className="hero">
       <Background />
 
-      <div
-        className="heroContent"
-        style={{
-          transform: `translateY(${scrollY * 0.2}px)`,
-        }}
-      >
+      <div className="heroContent">
+        {/* Parallax effect on content */}
         <h1>
           Do zero ao <span className="gold">que realmente importa</span>
         </h1>
