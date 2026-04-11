@@ -25,7 +25,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-8 sm:px-10 lg:px-12">
+      <div className="max-w-7xl mx-6 sm:mx-auto px-2 sm:px-10 lg:px-12">
         <div className="flex h-16 items-center justify-between gap-3">
           {/* Logo */}
           <Link 
