@@ -44,7 +44,7 @@ body {
 }
 
 main {
-  padding-top: calc(var(--navbar-height) - var(--hero-lift));
+  padding-top: var(--navbar-height);
 }
 
 /* Keyframes for animations */
@@ -220,7 +220,7 @@ a {
 .hero {
   position: relative;
   isolation: isolate;
-  min-height: calc(100svh - var(--navbar-height) + var(--hero-lift));
+  min-height: calc(100svh - var(--navbar-height));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -334,6 +334,7 @@ a {
   margin-inline: auto;
   text-align: center;
   padding-top: 0;
+  transform: translateY(calc(-1 * var(--hero-lift)));
 }
 
 @keyframes waveDrift {
