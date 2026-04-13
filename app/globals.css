@@ -358,17 +358,20 @@ a {
 }
 
 /* ===== CAROUSEL LATERAL ===== */
+
 .carouselWrapper {
   display: flex;
   flex-direction: row;
   align-items: stretch;
   justify-content: center;
   gap: 0;
-  width: 100%;
-  max-width: 700px;
-  margin: 2rem auto 0 auto;
+  width: 100vw;
+  max-width: 100vw;
+  height: calc(100dvh - var(--navbar-height));
+  min-height: 400px;
+  margin: 0;
   background: rgba(0,0,0,0.25);
-  border-radius: 1.2rem;
+  border-radius: 0;
   box-shadow: 0 2px 24px 0 rgba(0,0,0,0.25);
   overflow: hidden;
 }
