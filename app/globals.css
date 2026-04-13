@@ -43,7 +43,7 @@ body {
 }
 
 main {
-  padding-top: var(--navbar-height);
+  padding-top: 0;
 }
 
 /* Keyframes for animations */
@@ -219,7 +219,7 @@ a {
 .hero {
   position: relative;
   isolation: isolate;
-  min-height: calc(100svh - var(--navbar-height));
+  min-height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
