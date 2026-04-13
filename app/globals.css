@@ -329,7 +329,7 @@ a {
 .heroContent {
   position: relative;
   z-index: 20;
-  width: min(1200px, calc(100% - 1.5rem));
+  width: min(100% - 1rem);
   margin-inline: auto;
   text-align: center;
   padding-top: 0;
@@ -385,6 +385,8 @@ a {
   font-size: 0.8rem;
   margin-left: auto;
   margin-right: auto;
+  text-align: justify;
+  text-align-last: center;
 }
 
 @media (min-width: 768px) {
