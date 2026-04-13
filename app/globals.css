@@ -285,7 +285,7 @@ a {
   width: min(1200px, calc(100% - 2rem));
   margin-inline: auto;
   text-align: center;
-  padding-top: 0;
+  padding-top: 4.5rem;
 }
 
 @keyframes waveDrift {
