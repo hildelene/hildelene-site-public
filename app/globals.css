@@ -328,7 +328,13 @@ a {
   width: min(1200px, calc(100% - 1.5rem));
   margin-inline: auto;
   text-align: center;
-  padding-top: calc(var(--navbar-height) + 1rem);
+  padding-top: calc(var(--navbar-height) + 2.5rem);
+}
+
+@media (min-width: 768px) {
+  .heroContent {
+    padding-top: calc(var(--navbar-height) + 1.5rem);
+  }
 }
 
 @keyframes waveDrift {
@@ -368,7 +374,7 @@ a {
 .hero-divider {
   width: 12rem;
   height: 0.1rem;
-  margin: 0.8rem auto;
+  margin: 0.7rem auto;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--gold) 50%, rgba(0, 0, 0, 0) 100%);
   opacity: 0.6;
 }
@@ -376,7 +382,7 @@ a {
 .hero p {
   margin-top: 15px;
   color: var(--light-gray);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin-left: auto;
   margin-right: auto;
 }
