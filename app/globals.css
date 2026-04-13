@@ -8,7 +8,6 @@
   --offwhite: #f0f0f0;
   --light-gray: #ccc;
   --navbar-height: 4rem;
-  --hero-lift: 1rem;
   --font-primary: "Times New Roman", Times, serif;
 }
 
@@ -352,7 +351,7 @@ a {
   font-size: 2.2rem;
   color: white;
   line-height: 2.4rem;
-  margin-top: calc(-1 * var(--hero-lift));
+  margin-top: -1rem;
 }
 
 @media (min-width: 768px) {
