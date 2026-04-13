@@ -34,34 +34,28 @@ export default function Hero() {
           <button className="secondary">Apoie</button>
         </div>
 
-        {/* CAROUSEL */}
+        {/* CAROUSEL COM MENU LATERAL */}
         <div className="carouselWrapper">
-          <button onClick={() => scrollCarousel(-1)} className="carouselBtn">
-            ←
-          </button>
-
-          <div className="carousel" ref={carouselRef}>
-            <div className="card">
-              <h3>Design Hidrodinâmico</h3>
-              <p>Simulações CFD avancadas e testes de propulsão para otimizar desempenho</p>
-            </div>
-            <div className="card">
-              <h3>Engenharia de Estruturas</h3>
-              <p>Projetos estruturais de precisão com os melhores materiais</p>
-            </div>
-            <div className="card">
-              <h3>Sistema de Propulsão</h3>
-              <p>Desenvolvimento de sistemas inovadores com tecnologia de ponta</p>
-            </div>
-            <div className="card">
-              <h3>Prototipagem Rápida</h3>
-              <p>Criação de protótipos avançados para validação de conceitos</p>
+          <div className="carouselSidebar">
+            <button className="carouselMenuBtn">A Equipe</button>
+            <button className="carouselMenuBtn">Projetos</button>
+            <button className="carouselMenuBtn">Desenvolvimento Profissional</button>
+          </div>
+          <div className="carouselMain">
+            <div className="carousel" ref={carouselRef}>
+              <div className="card">
+                <div className="carouselImage" style={{backgroundImage: "url('/images/hero-ocean-dark.jpg')"}} />
+                <div className="carouselText">
+                  <p>Do zero ao mar, nosso time projeta, desenvolve e constrói rebocadores inovadores para atender as demandas da indústria naval.</p>
+                </div>
+                <div className="carouselIndicators">
+                  <span className="carouselDot active"></span>
+                  <span className="carouselDot"></span>
+                  <span className="carouselDot"></span>
+                </div>
+              </div>
             </div>
           </div>
-
-          <button onClick={() => scrollCarousel(1)} className="carouselBtn">
-            →
-          </button>
         </div>
       </div>
     </section>
