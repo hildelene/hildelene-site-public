@@ -329,7 +329,7 @@ a {
 .heroContent {
   position: relative;
   z-index: 20;
-  width: min(100% - 2rem);
+  width: min(1200px, calc(100% - 2rem));
   margin-inline: auto;
   text-align: center;
   padding-top: 0;
