@@ -140,9 +140,9 @@ a {
   flex-shrink: 0;
   border-radius: 0.2rem;
   border: 0.5px solid var(--gold-shadow);
-  font-size: 0.9rem;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
+  font-size: 0.8rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
   color: var(--gold);
   transition: all 0.2s ease;
 }
