@@ -42,6 +42,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  padding-top: var(--navbar-height);
+}
+
 /* Keyframes for animations */
 @keyframes fadeIn {
   from {
@@ -215,9 +219,9 @@ a {
 .hero {
   position: relative;
   isolation: isolate;
-  min-height: 100svh;
+  min-height: calc(100svh - var(--navbar-height));
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   overflow: hidden;
 }
@@ -328,13 +332,7 @@ a {
   width: min(1200px, calc(100% - 1.5rem));
   margin-inline: auto;
   text-align: center;
-  padding-top: calc(var(--navbar-height) + 2.5rem);
-}
-
-@media (min-width: 768px) {
-  .heroContent {
-    padding-top: calc(var(--navbar-height) + 1.5rem);
-  }
+  padding-top: 0;
 }
 
 @keyframes waveDrift {
@@ -352,6 +350,7 @@ a {
 .hero h1 {
   font-size: 2.2rem;
   color: white;
+  line-height: 0.7rem;
 }
 
 @media (min-width: 768px) {
@@ -382,7 +381,7 @@ a {
 .hero p {
   margin-top: 15px;
   color: var(--light-gray);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -394,8 +393,7 @@ a {
 }
 
 .buttons {
-  margin-top: 30px;
-  padding: 1rem;
+  margin-top: 1rem;
   display: flex;
   gap: 15px;
   justify-content: center;
