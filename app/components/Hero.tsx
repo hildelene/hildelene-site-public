@@ -31,8 +31,7 @@ export default function Hero() {
 
         <div className="buttons">
           <button className="secondary">Faça parte</button>
-          <button className="secondary">Coopere</button>
-          <button className="secondary">Seja patrocinador</button>
+          <button className="secondary">Apoie</button>
         </div>
 
         {/* CAROUSEL */}
