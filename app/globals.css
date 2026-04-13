@@ -417,6 +417,8 @@ a {
   justify-content: center;
   min-width: 0;
   background: none;
+  height: 30rem;
+  min-height: 24rem;
 }
 
 .carousel {
