@@ -1,27 +1,18 @@
 'use client';
 
 import Background from './Background';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 
 export default function Hero() {
+  const carouselRef = useRef<HTMLDivElement>(null);
 
-  // Conteúdos do carrossel
-  const carouselContents = [
-    {
-      image: "/images/hero-ocean-dark.jpg",
-      text: "Do zero ao mar, nosso time projeta, desenvolve e constrói rebocadores inovadores para atender as demandas da indústria naval."
-    },
-    {
-      image: "/images/hero-projetos.jpg",
-      text: "Projetos desafiadores unem teoria e prática, promovendo inovação e crescimento profissional para todos os membros."
-    },
-    {
-      image: "/images/hero-desenvolvimento.jpg",
-      text: "Desenvolvimento profissional contínuo: aprendizados técnicos, liderança e trabalho em equipe para o futuro da indústria naval."
-    }
-  ];
-
-  const [carouselIndex, setCarouselIndex] = useState(0);
+  const scrollCarousel = (dir: number) => {
+    if (!carouselRef.current) return;
+    carouselRef.current.scrollBy({
+      left: dir * 280,
+      behavior: 'smooth',
+    });
+  };
 
   return (
     <section id="home" className="hero">
@@ -46,46 +37,21 @@ export default function Hero() {
         {/* CAROUSEL COM MENU LATERAL */}
         <div className="carouselWrapper">
           <div className="carouselSidebar">
-            <button
-              className={`carouselMenuBtn${carouselIndex === 0 ? ' active' : ''}`}
-              onClick={() => setCarouselIndex(0)}
-              aria-label="A Equipe"
-            >
-              <span style={{fontSize: '0.95rem'}}>A Equipe</span>
-            </button>
-            <button
-              className={`carouselMenuBtn${carouselIndex === 1 ? ' active' : ''}`}
-              onClick={() => setCarouselIndex(1)}
-              aria-label="Projetos"
-            >
-              <span style={{fontSize: '0.95rem'}}>Projetos</span>
-            </button>
-            <button
-              className={`carouselMenuBtn${carouselIndex === 2 ? ' active' : ''}`}
-              onClick={() => setCarouselIndex(2)}
-              aria-label="Desenvolvimento Profissional"
-            >
-              <span style={{fontSize: '0.85rem'}}>Desenvolvimento Profissional</span>
-            </button>
+            <button className="carouselMenuBtn">A Equipe</button>
+            <button className="carouselMenuBtn">Projetos</button>
+            <button className="carouselMenuBtn">Desenvolvimento Profissional</button>
           </div>
           <div className="carouselMain">
-            <div className="carousel">
+            <div className="carousel" ref={carouselRef}>
               <div className="card">
-                <div
-                  className="carouselImage"
-                  style={{backgroundImage: `url('${carouselContents[carouselIndex].image}')`}}
-                />
+                <div className="carouselImage" style={{backgroundImage: "url('/images/hero-ocean-dark.jpg')"}} />
                 <div className="carouselText">
-                  <p>{carouselContents[carouselIndex].text}</p>
+                  <p>Do zero ao mar, nosso time projeta, desenvolve e constrói rebocadores inovadores para atender as demandas da indústria naval.</p>
                 </div>
                 <div className="carouselIndicators">
-                  {carouselContents.map((_, idx) => (
-                    <span
-                      key={idx}
-                      className={`carouselDot${carouselIndex === idx ? ' active' : ''}`}
-                      aria-label={`Slide ${idx+1}`}
-                    ></span>
-                  ))}
+                  <span className="carouselDot active"></span>
+                  <span className="carouselDot"></span>
+                  <span className="carouselDot"></span>
                 </div>
               </div>
             </div>
