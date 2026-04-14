@@ -1,3 +1,31 @@
+/* ===== NAVBAR MOBILE MENU ===== */
+.navbar-mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  background: rgba(10, 12, 20, 0.98);
+  border-radius: 0.7rem;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.18);
+  padding: 1.2rem 1.1rem 1.2rem 1.1rem;
+  margin-top: 1rem;
+  z-index: 100;
+  position: relative;
+}
+
+.navbar-mobile-link, .navbar-mobile-team-btn {
+  color: var(--cream);
+  font-size: 1.1rem;
+  padding: 0.5rem 0.2rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  width: 100%;
+  transition: background 0.2s, color 0.2s;
+}
+.navbar-mobile-link:hover, .navbar-mobile-team-btn:hover {
+  background: var(--gold-shadow);
+  color: var(--gold);
+}
 @import "tailwindcss";
 
 :root {
@@ -467,7 +495,8 @@ a {
   border-radius: 50%;
   background: var(--gold-shadow);
   opacity: 0.4;
-  transition: opacity 0.2s, background 0.2s;
+  transition: opacity 0.2s;
+  background: 0.2s;
 }
 
 .carouselDot.active {
