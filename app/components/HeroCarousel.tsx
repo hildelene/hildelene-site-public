@@ -23,7 +23,7 @@ export default function HeroCarousel() {
       </div>
       <div className="carouselMain">
         <div className="carousel" ref={carouselRef}>
-          <div className="card">
+          <div className="carouselCard">
             <div className="carouselImage" style={{backgroundImage: `url('${slides[0].image}')`}} />
             <div className="carouselText">
               <p>{slides[0].text}</p>
