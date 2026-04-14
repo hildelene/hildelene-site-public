@@ -519,7 +519,7 @@ a {
 }
 
 .carouselImage {
-  height: 20px;
+  height: 200px;
   background-size: cover;
   background-position: center;
   border-bottom: 2px solid var(--gold-shadow);
