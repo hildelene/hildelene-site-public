@@ -1,36 +1,81 @@
 import { useRef, useState } from 'react';
 
+type TopicKey = 'equipe' | 'projetos' | 'frutos';
+
 export default function HeroCarousel() {
   const carouselRef = useRef<HTMLDivElement>(null);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeTopic, setActiveTopic] = useState<TopicKey>('equipe');
+  const [activeSlide, setActiveSlide] = useState(0);
 
-  // Slides do carousel
-  const slides = [
-    {
-      image: "/images/hero-ocean-dark.jpg",
-      text: "Abrangendo toda a comunidade acadêmica, servimos como berço do desenvolvimento de excelentes profissionais, criativos e capacitados na resolução de problemas, que serão cruciais para o futuro da indústria naval."
-    },
-    {
-      image: "/images/hero-projetos.jpg",
-      text: "Projetos inovadores desenvolvidos por nossos membros, impactando a engenharia naval e a comunidade acadêmica."
-    },
-    {
-      image: "/images/hero-frutos.jpg",
-      text: "Nossos frutos: profissionais de destaque, pesquisas premiadas e contribuições relevantes para o setor marítimo."
-    }
+  // Estrutura dos slides por tópico
+  const slidesByTopic: Record<TopicKey, { image: string; text: string }[]> = {
+    equipe: [
+      {
+        image: "/images/hero-eqp1.jpg",
+        text: "Equipe: Slide 1 - Liderança e integração de talentos multidisciplinares."
+      },
+      {
+        image: "/images/hero-eqp2.jpg",
+        text: "Equipe: Slide 2 - Experiência em projetos reais e formação contínua."
+      },
+      {
+        image: "/images/hero-eqp3.jpg",
+        text: "Equipe: Slide 3 - Compromisso com a excelência e inovação."
+      }
+    ],
+    projetos: [
+      {
+        image: "/images/hero-proj1.jpg",
+        text: "Projetos: Slide 1 - Desenvolvimento de embarcações sustentáveis."
+      },
+      {
+        image: "/images/hero-proj2.jpg",
+        text: "Projetos: Slide 2 - Parcerias com a indústria naval e acadêmica."
+      }
+    ],
+    frutos: [
+      {
+        image: "/images/hero-frt1.jpg",
+        text: "Frutos: Slide 1 - Ex-membros em posições de destaque no setor."
+      },
+      {
+        image: "/images/hero-frt2.jpg",
+        text: "Frutos: Slide 2 - Pesquisas premiadas em congressos nacionais e internacionais."
+      },
+      {
+        image: "/images/hero-frt3.jpg",
+        text: "Frutos: Slide 3 - Iniciativas de impacto social e ambiental."
+      },
+      {
+        image: "/images/hero-frt4.jpg",
+        text: "Frutos: Slide 4 - Contribuições relevantes para o setor marítimo brasileiro."
+      }
+    ]
+  };
+
+  const menuLabels: { key: TopicKey; label: string }[] = [
+    { key: 'equipe', label: 'Equipe' },
+    { key: 'projetos', label: 'Projetos' },
+    { key: 'frutos', label: 'Frutos' }
   ];
 
-  // Labels dos botões
-  const menuLabels = ["A Equipe", "Projetos", "Frutos"];
+  // Slides do tópico ativo
+  const slides = slidesByTopic[activeTopic];
+
+  // Troca de tópico: reseta slide para 0
+  const handleTopicChange = (topicKey: TopicKey) => {
+    setActiveTopic(topicKey);
+    setActiveSlide(0);
+  };
 
   return (
     <div className="carouselWrapper">
       <div className="carouselSidebar">
-        {menuLabels.map((label, idx) => (
+        {menuLabels.map(({ key, label }) => (
           <button
-            key={label}
-            className={`carouselMenuBtn${activeIndex === idx ? " active" : ""}`}
-            onClick={() => setActiveIndex(idx)}
+            key={key}
+            className={`carouselMenuBtn${activeTopic === key ? " active" : ""}`}
+            onClick={() => handleTopicChange(key)}
           >
             {label}
           </button>
@@ -39,16 +84,16 @@ export default function HeroCarousel() {
       <div className="carouselMain">
         <div className="carousel" ref={carouselRef}>
           <div className="carouselCard">
-            <div className="carouselImage" style={{backgroundImage: `url('${slides[activeIndex].image}')`}} />
+            <div className="carouselImage" style={{backgroundImage: `url('${slides[activeSlide].image}')`}} />
             <div className="carouselText">
-              <p>{slides[activeIndex].text}</p>
+              <p>{slides[activeSlide].text}</p>
             </div>
             <div className="carouselIndicators">
               {slides.map((_, idx) => (
                 <span
                   key={idx}
-                  className={`carouselDot${activeIndex === idx ? " active" : ""}`}
-                  onClick={() => setActiveIndex(idx)}
+                  className={`carouselDot${activeSlide === idx ? " active" : ""}`}
+                  onClick={() => setActiveSlide(idx)}
                   style={{ cursor: 'pointer' }}
                 />
               ))}
@@ -58,4 +103,5 @@ export default function HeroCarousel() {
       </div>
     </div>
   );
+// Removida chave extra
 }
