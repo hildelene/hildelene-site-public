@@ -1,3 +1,59 @@
+/* ===== BOTÃO INTRANET NAVBAR ===== */
+.navbar-contact-btn {
+  background: var(--gold);
+  color: var(--navy-dark);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+  transition: background 0.2s, color 0.2s;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+}
+.navbar-contact-btn:hover {
+  background: var(--gold-shadow);
+  color: var(--cream);
+}
+
+@media (max-width: 767px) {
+  .navbar-contact-btn {
+    font-size: 0.98rem;
+    padding: 0.45rem 1.1rem;
+    margin-left: 0.2rem;
+  }
+}
+
+/* ===== BOTÕES HERO ===== */
+.buttons {
+  margin-top: 1.2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-width: 22rem;
+  margin-inline: auto;
+}
+.buttons .secondary {
+  background: none;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  font-size: 1.08rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  padding: 0.48rem 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+}
+.buttons .secondary:hover {
+  background: var(--gold);
+  color: var(--navy-dark);
+  border-color: var(--gold-shadow);
+}
 /* ===== NAVBAR MOBILE MENU ===== */
 .navbar-mobile-menu {
   display: flex;
