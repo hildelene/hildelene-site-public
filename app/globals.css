@@ -4,9 +4,9 @@
   font-size: 0.7rem;
   padding: 0rem 0.5rem;
   border-radius: 0.2rem;
+  color: var(--gold);
   border: 1px solid var(--gold-shadow);
   cursor: pointer;
-  margin-right: 1rem;
 }
 
 .navbar-contact-btn:hover {
@@ -27,7 +27,7 @@
 
 .buttons .secondary {
   background: rgba(0,0,0,0.7);
-  border: 1px solid var(--gold);
+  border: 1px solid var(--gold-shadow);
   color: var(--gold);
   font-size: 0.8rem;
   border-radius: 0.2rem;
@@ -437,27 +437,20 @@ a {
   border-right: 2px solid var(--gold-shadow);
   padding: 0.3rem 0.1rem;
   gap: 0.3rem;
-  min-width: 68px;
-  max-width: 80px;
-  justify-content: center;
+  width: 5rem;
   align-items: stretch;
 }
 
 .carouselMenuBtn {
-  background: none;
-  border: none;
+  border: 1px solid var(--gold-shadow);
   color: var(--cream);
-  font-size: 0.92rem;
-  padding: 0.38rem 0.1rem;
-  border-radius: 0.45rem;
-  margin: 0.08rem 0.1rem;
+  font-size: 0.7rem;
+  border-radius: 0.2rem;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
-  text-align: left;
+  text-align: right;
   white-space: normal;
-  line-height: 1.15;
-  min-height: 2.2em;
-  max-height: 2.5em;
+  min-height: 2.5rem;
   overflow: hidden;
 }
 

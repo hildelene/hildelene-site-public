@@ -7,7 +7,7 @@ export default function HeroCarousel() {
   const slides = [
     {
       image: "/images/hero-ocean-dark.jpg",
-      text: "Do zero ao mar, nosso time projeta, desenvolve e constrói rebocadores inovadores para atender as demandas da indústria naval."
+      text: "Abrangendo toda a comunidade acadêmica, servimos como berço do desenvolvimento de excelentes profissionais, criativos e capacitados na resolução de problemas, que serão cruciais para o futuro da indústria naval."
     },
     // Adicione mais slides se desejar
   ];
@@ -19,7 +19,7 @@ export default function HeroCarousel() {
       <div className="carouselSidebar">
         <button className="carouselMenuBtn">A Equipe</button>
         <button className="carouselMenuBtn">Projetos</button>
-        <button className="carouselMenuBtn">Desenvolvimento Profissional</button>
+        <button className="carouselMenuBtn">Frutos</button>
       </div>
       <div className="carouselMain">
         <div className="carousel" ref={carouselRef}>

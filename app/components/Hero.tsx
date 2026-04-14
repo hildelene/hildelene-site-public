@@ -20,7 +20,7 @@ export default function Hero() {
 
         <div className="hero-divider"></div>
 
-        <p>Conheça os universitários que superam desafios com projetos inovadores por meio da metodologia acadêmica somado à alta performance. Abrangendo toda a comunidade acadêmica, servimos como berço do desenvolvimento de excelentes profissionais, criativos e capacitados na resolução de problemas, que serão cruciais para o futuro da indústria naval. </p>
+        <p>Conheça os universitários que superam desafios com projetos inovadores por meio da metodologia acadêmica somado à alta performance.</p>
 
         <div className="buttons">
           <button className="secondary">Faça parte</button>
