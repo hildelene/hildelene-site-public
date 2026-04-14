@@ -6,18 +6,12 @@
   border-radius: 0.5rem;
   border: 1px solid var(--gold-shadow);
   cursor: pointer;
+  margin-left: 1rem;
 }
+
 .navbar-contact-btn:hover {
   background: var(--gold-shadow);
   color: var(--cream);
-}
-
-@media (max-width: 767px) {
-  .navbar-contact-btn {
-    font-size: 0.98rem;
-    padding: 0.45rem 1.1rem;
-    margin-left: 0.2rem;
-  }
 }
 
 /* ===== BOTÕES HERO ===== */
