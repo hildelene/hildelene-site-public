@@ -495,10 +495,16 @@ a {
 }
 
 .carouselText {
-  padding: 1.2rem 1.1rem 0.7rem 1.1rem;
+  padding: 0.7rem 1.1rem 0.7rem 1.1rem;
   color: var(--cream);
   font-size: 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex: 1;
 }
 
 .carouselIndicators {
