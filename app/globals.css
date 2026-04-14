@@ -1,12 +1,12 @@
 /* ===== BOTÃO INTRANET NAVBAR ===== */
 .navbar-contact-btn {
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.3);
   font-size: 0.7rem;
-  padding: 0rem 1rem;
-  border-radius: 0.5rem;
+  padding: 0rem 0.5rem;
+  border-radius: 0.2rem;
   border: 1px solid var(--gold-shadow);
   cursor: pointer;
-  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .navbar-contact-btn:hover {
