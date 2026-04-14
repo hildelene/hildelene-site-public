@@ -395,7 +395,8 @@ a {
 .hero-divider {
   width: 12rem;
   height: 0.1rem;
-  margin: 0.7rem auto;
+  margin-top: 0.3rem;
+  margin-bottom: 0.7rem;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--gold) 50%, rgba(0, 0, 0, 0) 100%);
   opacity: 0.6;
 }
@@ -420,7 +421,7 @@ a {
   flex-direction: row;
   align-items: stretch;
   justify-content: center;
-  margin: 2rem auto 0 auto;
+  margin: 1rem auto 0 auto;
   background: rgba(0,0,0,0.25);
   border-radius: 1.2rem;
   box-shadow: 0 2px 24px 0 rgba(0,0,0,0.25);
@@ -483,8 +484,8 @@ a {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 32px 0 rgba(0,0,0,0.28);
-  min-width: 0;
-  border: 1px solid var(--gold);
+  height: 28rem;
+  border: 1px solid var(--gold-shadow);
   justify-content: flex-start;
 }
 
