@@ -450,8 +450,11 @@ a {
   background: rgba(0,0,0,0.25);
   border-radius: 1.2rem;
   box-shadow: 0 2px 24px 0 rgba(0,0,0,0.25);
-
   overflow: hidden;
+  position: relative;
+  /* Garante que o crescimento é para baixo, não para cima */
+  /* Se necessário, aumente o padding-bottom */
+  padding-bottom: 1.5rem;
 }
 
 .carouselSidebar {
@@ -518,7 +521,7 @@ a {
   padding: 0;
   min-width: 320px;
   max-width: 420px;
-  min-height: 420px; /* aumenta altura total */
+  /* min-height removido para não empurrar para cima */
   margin: 0 auto;
 }
 
