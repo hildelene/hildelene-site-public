@@ -65,7 +65,7 @@ export default function About() {
             </div>
 
             {/* Floating Stats */}
-            <div className="absolute -bottom-6 -right-6 bg-gold text-navy-dark p-4 rounded-lg shadow-xl">
+            <div className="absolute -bottom-6 bg-gold text-navy-dark p-4 rounded-lg shadow-xl">
               <div className="text-3xl font-bold">50+</div>
               <div className="text-sm font-semibold">Membros da Equipe</div>
             </div>
