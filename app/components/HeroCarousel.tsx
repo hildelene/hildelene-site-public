@@ -82,43 +82,44 @@ export default function HeroCarousel() {
         ))}
       </div>
       <div className="carouselMain">
-        <div className="carousel overflow-hidden" ref={carouselRef} style={{position: 'relative', width: '100%'}}>
-          <div
-            className="carouselTrack"
-            style={{
-              display: 'flex',
-              transition: 'transform 0.5s cubic-bezier(0.4,0,0.2,1)',
-              transform: `translateX(-${activeSlide * 100}%)`,
-              width: `${slides.length * 100}%`
-            }}
-          >
-            {slides.map((slide, idx) => (
-              <div
-                key={idx}
-                className="carouselCard"
-                style={{
-                  minWidth: '100%',
-                  maxWidth: '100%',
-                  flex: '0 0 100%',
-                  transition: 'box-shadow 0.3s',
-                }}
-              >
-                <div className="carouselImage" style={{backgroundImage: `url('${slide.image}')`}} />
-                <div className="carouselText">
-                  <p>{slide.text}</p>
+        <div className="carousel" ref={carouselRef}>
+          <div className="carouselCard" style={{position: 'relative', overflow: 'hidden'}}>
+            <div
+              className="carouselCardTrack"
+              style={{
+                display: 'flex',
+                transition: 'transform 0.5s cubic-bezier(0.4,0,0.2,1)',
+                transform: `translateX(-${activeSlide * 100}%)`,
+                width: `${slides.length * 100}%`,
+                position: 'relative',
+              }}
+            >
+              {slides.map((slide, idx) => (
+                <div
+                  key={idx}
+                  style={{
+                    minWidth: '100%',
+                    maxWidth: '100%',
+                    flex: '0 0 100%',
+                  }}
+                >
+                  <div className="carouselImage" style={{backgroundImage: `url('${slide.image}')`}} />
+                  <div className="carouselText">
+                    <p>{slide.text}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-          <div className="carouselIndicators">
-            {slides.map((_, idx) => (
-              <span
-                key={idx}
-                className={`carouselDot${activeSlide === idx ? " active" : ""}`}
-                onClick={() => setActiveSlide(idx)}
-                style={{ cursor: 'pointer' }}
-              />
-            ))}
+              ))}
+            </div>
+            <div className="carouselIndicators">
+              {slides.map((_, idx) => (
+                <span
+                  key={idx}
+                  className={`carouselDot${activeSlide === idx ? " active" : ""}`}
+                  onClick={() => setActiveSlide(idx)}
+                  style={{ cursor: 'pointer' }}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
