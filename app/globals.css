@@ -1,14 +1,11 @@
 /* ===== BOTÃO INTRANET NAVBAR ===== */
 .navbar-contact-btn {
   background: var(--gold);
-  color: var(--navy-dark);
-  font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.7rem;
   padding: 0.5rem 1.5rem;
   border-radius: 0.5rem;
-  margin-left: 0.5rem;
-  transition: background 0.2s, color 0.2s;
-  border: none;
+  transition: background-color 0.2s;
+  border: 1px solid var(--gold-shadow);
   cursor: pointer;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
 }
@@ -33,21 +30,17 @@
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  width: 100%;
-  max-width: 22rem;
   margin-inline: auto;
 }
 .buttons .secondary {
-  background: none;
-  border: 2px solid var(--gold);
+  background: rgba(0,0,0,0.8);
+  border: 1px solid var(--gold);
   color: var(--gold);
-  font-size: 1.08rem;
-  font-weight: 500;
-  border-radius: 0.5rem;
-  padding: 0.48rem 1.2rem;
+  font-size: 0.7rem;
+  border-radius: 0.2rem;
+  padding: 0.1rem 1rem;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s, border 0.2s;
-  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
 .buttons .secondary:hover {
   background: var(--gold);
@@ -428,12 +421,10 @@ a {
 .buttons {
   margin-top: 1rem;
   display: flex;
-  gap: 15px;
+  gap: 2rem;
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  width: 100%;
-  max-width: 28rem;
   margin-inline: auto;
 }
 
