@@ -481,6 +481,7 @@ a {
   overflow: hidden;
   box-shadow: 0 4px 32px 0 rgba(0,0,0,0.28);
   height: 28rem;
+  max-width: 16rem;
   border: 1px solid var(--gold-shadow);
   justify-content: flex-start;
 }
