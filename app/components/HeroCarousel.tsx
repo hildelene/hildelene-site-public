@@ -15,43 +15,99 @@ export default function HeroCarousel() {
     equipe: [
       {
         image: "/images/hero-eqp1.jpg",
-        text: "Equipe: Slide 1 - Liderança e integração de talentos multidisciplinares."
+        text: "Abrangindo toda a comunidade acadêmica, servimos como berço do desenvolvimento de grandes talentos que serão o futuro da indústria naval."
       },
       {
         image: "/images/hero-eqp2.jpg",
-        text: "Equipe: Slide 2 - Experiência em projetos reais e formação contínua."
+        text: "Nosso laboratório é um espaço de aprendizado prático, onde os membros aplicam conhecimentos teóricos em projetos reais, enfrentando desafios e encontrando soluções inovadoras."
       },
       {
         image: "/images/hero-eqp3.jpg",
-        text: "Equipe: Slide 3 - Compromisso com a excelência e inovação."
+        text: "Atualmente nos dividimos em: Gestão, Projeto, Estrutura, Mecânica, Eletroeletrônica e Comunicação."
       }
     ],
     projetos: [
       {
         image: "/images/hero-proj1.jpg",
-        text: "Projetos: Slide 1 - Desenvolvimento de embarcações sustentáveis."
+        text: "Nosso principal objetivo é a competição DUNA, além disso oferecemos serviços para arrecadação de verba. Também participamos em outros eventos paralelos como feiras e amostras."
       },
       {
         image: "/images/hero-proj2.jpg",
-        text: "Projetos: Slide 2 - Parcerias com a indústria naval e acadêmica."
+        text: "A competição DUNA"
+      },
+      {
+        image: "/images/hero-proj3.jpg",
+        text: "Maia"
+      },
+      {
+        image: "/images/hero-proj4.jpg",
+        text: "BigField V1"
+      },
+      {
+        image: "/images/hero-proj5.jpg",
+        text: "BigField V2"
+      },
+      {
+        image: "/images/hero-proj6.jpg",
+        text: "Impressão 3D"
+      },
+      {
+        image: "/images/hero-proj7.jpg",
+        text: "Modelagem 3D"
+      },
+      {
+        image: "/images/hero-proj8.jpg",
+        text: "Consultoria"
       }
     ],
     frutos: [
       {
         image: "/images/hero-frt1.jpg",
-        text: "Frutos: Slide 1 - Ex-membros em posições de destaque no setor."
+        text: "Premiações"
       },
       {
         image: "/images/hero-frt2.jpg",
-        text: "Frutos: Slide 2 - Pesquisas premiadas em congressos nacionais e internacionais."
+        text: "Visitas Técnicas"
       },
       {
         image: "/images/hero-frt3.jpg",
-        text: "Frutos: Slide 3 - Iniciativas de impacto social e ambiental."
+        text: "Menções"
       },
       {
         image: "/images/hero-frt4.jpg",
-        text: "Frutos: Slide 4 - Contribuições relevantes para o setor marítimo brasileiro."
+        text: "Flaviane"
+      },
+      {
+        image: "/images/hero-frt5.jpg",
+        text: "Milena"
+      },
+      {
+        image: "/images/hero-frt6.jpg",
+        text: "Bruno Cunha"
+      },
+      {
+        image: "/images/hero-frt7.jpg",
+        text: "Gabriel Maia"
+      },
+      {
+        image: "/images/hero-frt8.jpg",
+        text: "Luis"
+      },
+      {
+        image: "/images/hero-frt9.jpg",
+        text: "Gabriel Gama"
+      },
+      {
+        image: "/images/hero-frt10.jpg",
+        text: "Melo"
+      },
+      {
+        image: "/images/hero-frt11.jpg",
+        text: "Stancato"
+      },
+      {
+        image: "/images/hero-frt12.jpg",
+        text: "Ste"
       }
     ]
   };
