@@ -495,17 +495,6 @@ a {
 }
 
 .carouselText {
-  }
-
-  .carouselText p {
-    text-align: center;
-    color: var(--cream);
-    font-size: 1.05rem;
-    text-shadow: none;
-    text-align-last: unset;
-    margin: 0;
-    font-weight: 400;
-  }
   padding: 0.7rem 1.1rem 0.7rem 1.1rem;
   color: var(--cream);
   font-size: 1rem;
@@ -518,6 +507,17 @@ a {
   max-width: 100%;
   min-width: 0;
   /* padding já está simétrico, mas pode ser ajustado se necessário */
+}
+
+.carouselText p {
+  color: var(--cream);
+  font-size: 1.05rem;
+  text-align: center;
+  text-shadow: none;
+  text-align-last: unset;
+  margin: 0;
+  font-weight: 400;
+}
 
 .carouselIndicators {
   display: flex;
