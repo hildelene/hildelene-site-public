@@ -511,12 +511,9 @@ a {
 
 .carouselText p {
   color: var(--cream);
-  font-size: 1.05rem;
-  text-align: center;
-  text-shadow: none;
+  font-size: 0.7rem;
   text-align-last: unset;
-  margin: 0;
-  font-weight: 400;
+  max-width: 14rem;
 }
 
 .carouselIndicators {
