@@ -14,99 +14,99 @@ export default function HeroCarousel() {
   const slidesByTopic: Record<TopicKey, { image: string; text: string }[]> = {
     equipe: [
       {
-        image: "/images/hero-eqp1.jpg",
+        image: "/images/hero-eqp1.svg",
         text: "Abrangindo toda a comunidade acadêmica, servimos como berço do desenvolvimento de grandes talentos que serão o futuro da indústria naval."
       },
       {
-        image: "/images/hero-eqp2.jpg",
+        image: "/images/hero-eqp2.svg",
         text: "Nosso laboratório é um espaço de aprendizado prático, onde os membros aplicam conhecimentos teóricos em projetos reais, enfrentando desafios e encontrando soluções inovadoras."
       },
       {
-        image: "/images/hero-eqp3.jpg",
+        image: "/images/hero-eqp3.svg",
         text: "Atualmente nos dividimos em: Gestão, Projeto, Estrutura, Mecânica, Eletroeletrônica e Comunicação."
       }
     ],
     projetos: [
       {
-        image: "/images/hero-proj1.jpg",
+        image: "/images/hero-proj1.svg",
         text: "Nosso principal objetivo é a competição DUNA, além disso oferecemos serviços para arrecadação de verba. Também participamos em outros eventos paralelos como feiras e amostras."
       },
       {
-        image: "/images/hero-proj2.jpg",
+        image: "/images/hero-proj2.svg",
         text: "A competição DUNA"
       },
       {
-        image: "/images/hero-proj3.jpg",
+        image: "/images/hero-proj3.svg",
         text: "Maia"
       },
       {
-        image: "/images/hero-proj4.jpg",
+        image: "/images/hero-proj4.svg",
         text: "BigField V1"
       },
       {
-        image: "/images/hero-proj5.jpg",
+        image: "/images/hero-proj5.svg",
         text: "BigField V2"
       },
       {
-        image: "/images/hero-proj6.jpg",
+        image: "/images/hero-proj6.svg",
         text: "Impressão 3D"
       },
       {
-        image: "/images/hero-proj7.jpg",
+        image: "/images/hero-proj7.svg",
         text: "Modelagem 3D"
       },
       {
-        image: "/images/hero-proj8.jpg",
+        image: "/images/hero-proj8.svg",
         text: "Consultoria"
       }
     ],
     frutos: [
       {
-        image: "/images/hero-frt1.jpg",
+        image: "/images/hero-frt1.svg",
         text: "Premiações"
       },
       {
-        image: "/images/hero-frt2.jpg",
+        image: "/images/hero-frt2.svg",
         text: "Visitas Técnicas"
       },
       {
-        image: "/images/hero-frt3.jpg",
+        image: "/images/hero-frt3.svg",
         text: "Menções"
       },
       {
-        image: "/images/hero-frt4.jpg",
+        image: "/images/hero-frt4.svg",
         text: "Flaviane"
       },
       {
-        image: "/images/hero-frt5.jpg",
+        image: "/images/hero-frt5.svg",
         text: "Milena"
       },
       {
-        image: "/images/hero-frt6.jpg",
+        image: "/images/hero-frt6.svg",
         text: "Bruno Cunha"
       },
       {
-        image: "/images/hero-frt7.jpg",
+        image: "/images/hero-frt7.svg",
         text: "Gabriel Maia"
       },
       {
-        image: "/images/hero-frt8.jpg",
+        image: "/images/hero-frt8.svg",
         text: "Luis"
       },
       {
-        image: "/images/hero-frt9.jpg",
+        image: "/images/hero-frt9.svg",
         text: "Gabriel Gama"
       },
       {
-        image: "/images/hero-frt10.jpg",
+        image: "/images/hero-frt10.svg",
         text: "Melo"
       },
       {
-        image: "/images/hero-frt11.jpg",
+        image: "/images/hero-frt11.svg",
         text: "Stancato"
       },
       {
-        image: "/images/hero-frt12.jpg",
+        image: "/images/hero-frt12.svg",
         text: "Ste"
       }
     ]
