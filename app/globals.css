@@ -489,7 +489,7 @@ a {
   max-width: 17rem;
   border: 1px solid var(--gold-shadow);
   justify-content: flex-start;
-  padding-bottom: 1.2rem; /* Espaço para os indicadores */
+  position: relative;
 }
 
 .carouselImage {
@@ -530,7 +530,11 @@ a {
   gap: 0.5rem;
   max-width: 14rem;
   margin-left: 1rem;
-  margin-bottom: 0.7rem; /* Espaço inferior em relação ao fundo do card */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.7rem;
+  z-index: 2;
 }
 
 .carouselDot {
