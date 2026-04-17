@@ -19,14 +19,13 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-inner flex h-16 items-center justify-between gap-3">
-        {/* Logo + nome */}
-        <Link href="/" className="flex items-center gap-2 flex-shrink-0">
+        {/* Apenas logo, clicável */}
+        <Link href="/" className="flex items-center flex-shrink-0">
           <img
             src="/midia/logo_hildelene_vetor_cmyk.svg"
             alt="Logo Hildelene Nautidesign"
             style={{ height: '2.5rem', width: 'auto', display: 'block' }}
           />
-          <span className="text-xl font-bold text-gold whitespace-nowrap">Hildelene Nautidesign</span>
         </Link>
         {/* Botão Intranet */}
         <a href="#" className="navbar-contact-btn">
