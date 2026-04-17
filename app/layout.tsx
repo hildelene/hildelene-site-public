@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Hildelene Nautidesign - Excelencia em Engenharia Naval',
+  title: 'Hildelene Nautidesign',
   description:
     'Pioneirismo no futuro da engenharia naval com inovacao, precisao e excelencia tecnologica. A Hildelene Nautidesign e uma equipe dedicada a superar limites na tecnologia maritima.',
   keywords:
