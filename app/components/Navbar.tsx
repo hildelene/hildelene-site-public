@@ -22,7 +22,7 @@ export default function Navbar() {
         {/* Apenas logo, clicável */}
         <Link href="/" className="flex items-center flex-shrink-0">
           <img
-            src="/midia/herocarousel/logo_hildelene_vetor_cmyk.svg"
+            src="/logo_hildelene_vetor_cmyk.svg"
             alt="Logo Hildelene Nautidesign"
             style={{ height: '2.5rem', width: 'auto', display: 'block' }}
           />
