@@ -393,8 +393,7 @@ a {
 .hero-divider {
   width: 12rem;
   height: 0.1rem;
-  margin-top: 0.3rem;
-  margin-bottom: 0.7rem;
+  margin: 0.3rem auto 0.7rem auto;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--gold) 50%, rgba(0, 0, 0, 0) 100%);
   opacity: 0.6;
 }
