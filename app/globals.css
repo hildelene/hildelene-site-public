@@ -494,7 +494,8 @@ a {
 
 .carouselImage {
   height: 200px;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   border-bottom: 2px solid var(--gold-shadow);
   border-top-left-radius: 2.2rem;
