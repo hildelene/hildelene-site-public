@@ -462,6 +462,7 @@ a {
   align-items: flex-end;
   justify-content: center;
   background: none;
+  padding-left: 1rem;
 }
 
 
@@ -493,13 +494,9 @@ a {
 }
 
 .carouselImage {
-  height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-bottom: 2px solid var(--gold-shadow);
-  border-top-left-radius: 2.2rem;
-  border-top-right-radius: 2.2rem;
+  height: 20rem;
+  width: 20rem;
+  background-size: cover;
 }
 
 .carouselText {
