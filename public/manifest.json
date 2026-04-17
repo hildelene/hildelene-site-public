@@ -1,0 +1,20 @@
+{
+  "name": "UERJ Hildelene Nautidesign",
+  "short_name": "UERJ Hildelene Nautidesign",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000",
+  "theme_color": "#fbba00",
+  "icons": [
+    {
+      "src": "/midia/logo_hildelene.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/midia/logo_hildelene.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
