@@ -10,7 +10,6 @@ export default function Navbar() {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
         setIsOpen(false);
-      }
     };
 
     window.addEventListener('resize', handleResize);
@@ -24,38 +23,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link 
             href="/" 
-            className="hidden flex-shrink-0 text-xl font-bold text-gold transition-colors hover:text-cream md:block"
-          >
-            Hildelene Nautidesign
-          </Link>
-
-
-          {/* Logo e nome da equipe */}
-          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-            <img
-              src="/midia/logo_hildelene_vetor_cmyk.svg"
-              alt="Logo Hildelene Nautidesign"
-              style={{ height: '2.5rem', width: 'auto', display: 'block' }}
-            />
-            <span className="text-xl font-bold text-gold whitespace-nowrap">Hildelene Nautidesign</span>
-          </Link>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <Link 
-              href="#home" 
-              className="navbar-link"
-            >
-              Inicio
-            </Link>
-            <Link 
-              href="#about" 
-              className="navbar-link"
-            >
-              Sobre
-            </Link>
-            <Link 
-              href="#projects" 
+      {/* Navegação removida conforme solicitado */}
               className="navbar-link"
             >
               Projetos
