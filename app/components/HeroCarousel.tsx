@@ -224,11 +224,10 @@ export default function HeroCarousel() {
                     minWidth: '100%',
                     maxWidth: '100%',
                     width: '100%',
-                    flex: '0 0 100%',
+                    height: '100%',
                     boxSizing: 'border-box',
                     display: 'flex',
                     flexDirection: 'column',
-                    height: '100%',
                   }}
                 >
                   <div className="carouselImage" style={{backgroundImage: `url('${slide.image}')`}} />
