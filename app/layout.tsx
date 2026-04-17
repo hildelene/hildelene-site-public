@@ -37,7 +37,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
       <head>
-        <link rel="icon" href="/logo_hildelene_vetor_cmyk.svg" type="image/svg+xml" />
+        <link rel="icon" href="/midia/logo_hildelene_vetor_cmyk.svg" type="image/svg+xml" />
       </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
