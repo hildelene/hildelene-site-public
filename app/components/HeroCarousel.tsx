@@ -231,8 +231,8 @@ export default function HeroCarousel() {
                     height: '100%',
                   }}
                 >
-                  <div className="carouselImage" style={{backgroundImage: `url('${slide.image}')`, flex: 1}} />
-                  <div className="carouselText" style={{whiteSpace: 'normal', wordBreak: 'break-word'}}>
+                  <div className="carouselImage" style={{backgroundImage: `url('${slide.image}')`}} />
+                  <div className="carouselText" style={{whiteSpace: 'normal', wordBreak: 'break-word', flex: 1}}>
                     <p>{slide.text}</p>
                   </div>
                 </div>
