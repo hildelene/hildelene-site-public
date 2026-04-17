@@ -1,3 +1,27 @@
+/* ===== NAVBAR LOGO + TEXTO ===== */
+.navbar-logo-link {
+  --navbar-logo-height: 2.5rem;
+  height: var(--navbar-logo-height);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-logo-img {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+.navbar-logo-text {
+  color: var(--gold);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem; /* text-xl */
+  font-weight: bold;
+  white-space: nowrap;
+}
 /* ===== BOTÃO INTRANET NAVBAR ===== */
 .navbar-contact-btn {
   background: rgba(0,0,0,0.3);

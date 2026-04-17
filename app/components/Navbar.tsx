@@ -19,22 +19,14 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-inner flex h-16 items-center justify-between gap-3">
-        {/* Logo + texto com altura igual */}
-        <Link
-          href="/"
-          className="flex items-center gap-2 flex-shrink-0"
-          style={{ '--navbar-logo-height': '2.5rem', height: 'var(--navbar-logo-height)' } as React.CSSProperties}
-        >
+        {/* Logo + texto com altura igual, estilos no CSS */}
+        <Link href="/" className="navbar-logo-link flex-shrink-0">
           <img
             src="/midia/logo_hildelene_vetor_cmyk.svg"
-            style={{ height: '100%', width: 'auto', display: 'block' }}
+            className="navbar-logo-img"
+            alt="UERJ Hildelene Nautidesign"
           />
-          <span
-            style={{ color: 'var(--gold)', height: '100%', display: 'flex', alignItems: 'center' }}
-            className="text-xl font-bold whitespace-nowrap"
-          >
-            UERJ Hildelene Nautidesign
-          </span>
+          <span className="navbar-logo-text">UERJ Hildelene Nautidesign</span>
         </Link>
         {/* Botão Intranet */}
         <a href="#" className="navbar-contact-btn">
