@@ -259,7 +259,7 @@ a {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background-image: url('/midia/hero-ocean-dark.jpg');
+  background-image: url('midia/hero-ocean-dark.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
