@@ -4,10 +4,10 @@ export default function About() {
       id="about"
       className="py-20 bg-navy-dark"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full justify-items-center">
           {/* Content */}
-          <div className="animate-fade-in">
+          <div className="animate-fade-in w-full flex flex-col items-center">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-cream mb-6">
               Sobre a <span className="text-gold">Hildelene</span>
             </h2>
@@ -33,20 +33,20 @@ export default function About() {
             </p>
 
             {/* Core Values */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="p-4 bg-navy-dark/50 border border-gold/20 rounded-lg hover:border-gold transition-colors">
+            <div className="grid grid-cols-2 gap-4 w-full justify-items-center">
+              <div className="p-4 bg-navy-dark/50 border border-gold/20 rounded-lg hover:border-gold transition-colors w-full flex flex-col items-center">
                 <h3 className="text-gold font-bold mb-2">Innovation</h3>
                 <p className="text-cream/70 text-sm">Superando limites com ideias transformadoras</p>
               </div>
-              <div className="p-4 bg-navy-dark/50 border border-gold/20 rounded-lg hover:border-gold transition-colors">
+              <div className="p-4 bg-navy-dark/50 border border-gold/20 rounded-lg hover:border-gold transition-colors w-full flex flex-col items-center">
                 <h3 className="text-gold font-bold mb-2">Excelencia</h3>
                 <p className="text-cream/70 text-sm">Busca constante pela qualidade em cada detalhe</p>
               </div>
-              <div className="p-4 bg-navy-dark/50 border border-gold/20 rounded-lg hover:border-gold transition-colors">
+              <div className="p-4 bg-navy-dark/50 border border-gold/20 rounded-lg hover:border-gold transition-colors w-full flex flex-col items-center">
                 <h3 className="text-gold font-bold mb-2">Colaboracao</h3>
                 <p className="text-cream/70 text-sm">Mais resultado por meio de trabalho em equipe</p>
               </div>
-              <div className="p-4 bg-navy-dark/50 border border-gold/20 rounded-lg hover:border-gold transition-colors">
+              <div className="p-4 bg-navy-dark/50 border border-gold/20 rounded-lg hover:border-gold transition-colors w-full flex flex-col items-center">
                 <h3 className="text-gold font-bold mb-2">Sustentabilidade</h3>
                 <p className="text-cream/70 text-sm">Construindo um futuro maritimo responsavel</p>
               </div>
