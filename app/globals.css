@@ -1,3 +1,58 @@
+/* ===== TIMELINE MOBILE CRONOGRAMA ===== */
+.schedule-section-mobile {
+  max-width: 480px;
+  margin: 0 auto;
+}
+.timeline-mobile {
+  position: relative;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--gold);
+  z-index: 0;
+}
+.timeline-item-mobile {
+  min-height: 48px;
+  margin-bottom: 2.5rem;
+}
+.timeline-circle-mobile {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+}
+.timeline-content-mobile {
+  margin-left: 2.5rem;
+  background: var(--navy);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: relative;
+  z-index: 1;
+}
+.timeline-toggle {
+  display: block;
+  margin: 0 auto 1rem auto;
+  background: var(--gold-shadow);
+  color: var(--cream);
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.3rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.timeline-toggle:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
 /* ===== CRONOGRAMA (SCHEDULE) ===== */
 .schedule-section {
   background: var(--navy-light);
