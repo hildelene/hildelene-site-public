@@ -1,5 +1,8 @@
-// Exportação default para uso em import MainCarousel from ...
-export default function MainCarousel() {
+
+// Exportação default correta para MainCarousel
+
+// Wrapper que exibe ambos os carrosseis
+function MainCarouselWrapper() {
   return (
     <>
       <EquipeCarousel />
@@ -7,6 +10,8 @@ export default function MainCarousel() {
     </>
   );
 }
+
+export default MainCarouselWrapper;
 "use client";
 import { useCallback, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
