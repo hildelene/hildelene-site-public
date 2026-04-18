@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="navbar-inner flex h-16 items-center justify-between gap-3">
+      <div className="navbar-inner flex h-16 items-center justify-between gap-3 relative">
         {/* Logo + texto com altura igual, estilos no CSS */}
         <Link href="/" className="navbar-logo-link flex-shrink-0">
           <img
@@ -26,7 +26,7 @@ export default function Navbar() {
             className="navbar-logo-img"
           />
         </Link>
-        <div className="navbar-title-container">
+        <div className="navbar-title-container navbar-title-absolute">
           <span className="navbar-title">Hildelene Nautidesign</span>
           <span className="navbar-subtitle">UERJ</span>
         </div>
