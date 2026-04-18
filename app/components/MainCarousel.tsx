@@ -4,13 +4,11 @@
 // Wrapper que exibe ambos os carrosseis
 function MainCarouselWrapper() {
   return (
-    <>
-      <EquipeCarousel />
-      <ConquistasCarousel />
-    </>
-  );
-}
 
+    "use client";
+    import { useCallback, useEffect, useState } from 'react';
+    import useEmblaCarousel from 'embla-carousel-react';
+    import NewsCard from './NewsCard';
 export default MainCarouselWrapper;
 "use client";
 import { useCallback, useEffect, useState } from 'react';
