@@ -1,4 +1,5 @@
 
+"use client";
 import { useRef, useState } from 'react';
 
 type Slide = { image: string; text: string };
