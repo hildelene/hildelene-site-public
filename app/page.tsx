@@ -14,9 +14,9 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <EquipeConquistasCarousels />
         <Schedule />
         <NewsCarousel />
-        <EquipeConquistasCarousels />
         <About />
         <SponsorsSimple />
         <Contact />
