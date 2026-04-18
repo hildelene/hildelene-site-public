@@ -14,19 +14,7 @@
   flex-direction: column;
   align-items: center;
 }
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
-  align-items: center;
-  width: 100%;
-  justify-items: center;
-}
-@media (min-width: 1024px) {
-  .about-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
+/* about-grid removido, centralização garantida pelo about-container/about-content */
 .about-content {
   width: 100%;
   max-width: 40rem;
