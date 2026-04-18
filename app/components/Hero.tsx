@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import Background from './Background';
-import HeroCarousel from './HeroCarousel';
+import { ProjetosCarousel } from './HeroCarousel';
 
 export default function Hero() {
 
@@ -30,8 +30,8 @@ export default function Hero() {
           </Link>
         </div>
 
-        {/* CAROUSEL COM MENU LATERAL */}
-        <HeroCarousel />
+        {/* Carrossel de Projetos */}
+        <ProjetosCarousel />
       </div>
     </section>
   );
