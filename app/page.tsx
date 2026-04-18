@@ -1,12 +1,12 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import NewsCarousel from './components/NewsCarousel';
+import MainCarousel from './components/MainCarousel';
 import Schedule from './components/Schedule';
+import NewsCarousel from './components/NewsCarousel';
 import About from './components/About';
 import SponsorsSimple from './components/SponsorsSimple';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import EquipeConquistasCarousels from './components/EquipeConquistasCarousels';
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <EquipeConquistasCarousels />
+        <MainCarousel />
         <Schedule />
         <NewsCarousel />
         <About />
