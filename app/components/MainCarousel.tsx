@@ -13,7 +13,15 @@ export function ConquistasCarousel() {
   return <MainCarousel data={conquistasData} sectionId="conquistas" title="Conquistas" />;
 }
 
-function MainCarousel({ data, sectionId, title }) {
+import type { NewsItem } from '../data/newsData';
+
+interface MainCarouselProps {
+  data: NewsItem[];
+  sectionId: string;
+  title: string;
+}
+
+function MainCarousel({ data, sectionId, title }: MainCarouselProps) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
   const [parallaxValues, setParallaxValues] = useState<number[]>([]);
