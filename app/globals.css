@@ -43,7 +43,8 @@
   font-size: 1rem;
   margin-bottom: 1.5rem;
   line-height: 1.7;
-  text-align: center;
+  text-align: justify;
+  text-align-last: center;
 }
 .about-values-grid {
   display: flex;

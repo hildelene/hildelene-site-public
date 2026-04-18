@@ -16,7 +16,6 @@ export default function Home() {
         <Schedule />
         <NewsCarousel />
         <About />
-
         <SponsorsSimple />
         <Contact />
       </main>
