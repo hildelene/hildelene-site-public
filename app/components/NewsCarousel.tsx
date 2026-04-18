@@ -79,11 +79,11 @@ export default function NewsCarousel() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="mb-12 text-center animate-fade-in">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-cream mb-4">
-            Ultimas <span className="text-gold">Noticias</span>
+        <div className="news-carousel-header animate-fade-in">
+          <h2 className="news-carousel-title">
+            Ultimas <span className="news-carousel-title-gold">Noticias</span>
           </h2>
-          <div className="h-1 w-20 bg-gradient-to-r from-gold to-transparent mx-auto" />
+          <div className="news-carousel-divider" />
         </div>
 
         {/* Carousel */}

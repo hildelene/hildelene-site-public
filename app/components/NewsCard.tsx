@@ -8,7 +8,7 @@ interface NewsCardProps {
 
 export default function NewsCard({ news, imageStyle }: NewsCardProps) {
   return (
-    <div className="bg-navy-dark border border-gold/20 rounded-lg overflow-hidden hover:border-gold transition-all duration-300 h-full flex flex-col group">
+    <div className="main-carousels-card group">
       {/* Image Container */}
       <div className="relative h-48 overflow-hidden bg-navy-dark/50">
         <img
