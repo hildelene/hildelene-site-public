@@ -53,23 +53,7 @@ export default function About() {
             </div>
           </div>
 
-          {/* Image Placeholder */}
-          <div className="relative animate-fade-in">
-            <div className="relative h-96 rounded-lg overflow-hidden bg-gradient-to-br from-gold/20 to-navy-dark/50 border border-gold/30">
-              <img
-                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=600&fit=crop"
-                alt="Equipe Hildelene"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-dark via-transparent to-transparent opacity-30" />
-            </div>
-
-            {/* Floating Stats */}
-            <div className="absolute -bottom-6 bg-gold text-navy-dark p-4 rounded-lg shadow-xl">
-              <div className="text-3xl font-bold">50+</div>
-              <div className="text-sm font-semibold">Membros da Equipe</div>
-            </div>
-          </div>
+          {/* ...existing code... */}
         </div>
       </div>
     </section>
