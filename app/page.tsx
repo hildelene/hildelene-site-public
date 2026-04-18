@@ -4,7 +4,7 @@ import NewsCarousel from './components/NewsCarousel';
 import Schedule from './components/Schedule';
 import About from './components/About';
 import Projects from './components/Projects';
-import Sponsors from './components/Sponsors';
+import SponsorsSimple from './components/SponsorsSimple';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -18,7 +18,7 @@ export default function Home() {
         <NewsCarousel />
         <About />
         <Projects />
-        <Sponsors />
+        <SponsorsSimple />
         <Contact />
       </main>
       <Footer />
