@@ -1,3 +1,10 @@
+main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+  display: block;
+}
 /* ===== TIMELINE MOBILE CRONOGRAMA ===== */
 .schedule-section-mobile {
   max-width: 480px;
