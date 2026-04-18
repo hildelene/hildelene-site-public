@@ -1,3 +1,12 @@
+// Exportação default para uso em import MainCarousel from ...
+export default function MainCarousel() {
+  return (
+    <>
+      <EquipeCarousel />
+      <ConquistasCarousel />
+    </>
+  );
+}
 "use client";
 import { useCallback, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
