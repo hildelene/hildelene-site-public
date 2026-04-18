@@ -41,26 +41,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Scroll to Top Button */}
-        <div className="flex justify-center mt-8">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="p-2 bg-gold/10 border border-gold/30 rounded-full text-gold hover:bg-gold hover:text-navy-dark transition-all duration-200"
-            aria-label="Voltar ao topo"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707a1 1 0 00-1.414-1.414L11 9.586V7a1 1 0 10-2 0v2.586L7.707 7.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
-        </div>
       </div>
     </footer>
   );
