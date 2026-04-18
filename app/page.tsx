@@ -6,6 +6,7 @@ import About from './components/About';
 import SponsorsSimple from './components/SponsorsSimple';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import EquipeConquistasCarousels from './components/EquipeConquistasCarousels';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Hero />
         <Schedule />
         <NewsCarousel />
+        <EquipeConquistasCarousels />
         <About />
         <SponsorsSimple />
         <Contact />
