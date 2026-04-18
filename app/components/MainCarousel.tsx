@@ -1,19 +1,22 @@
 
-// Exportação default correta para MainCarousel
-
-// Wrapper que exibe ambos os carrosseis
-function MainCarouselWrapper() {
-  return (
-
-    "use client";
-    import { useCallback, useEffect, useState } from 'react';
-    import useEmblaCarousel from 'embla-carousel-react';
-    import NewsCard from './NewsCard';
-export default MainCarouselWrapper;
 "use client";
 import { useCallback, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import NewsCard from './NewsCard';
+
+// ...restante do código permanece igual...
+
+// Wrapper que exibe ambos os carrosseis
+function MainCarouselWrapper() {
+  return (
+    <>
+      <EquipeCarousel />
+      <ConquistasCarousel />
+    </>
+  );
+}
+
+export default MainCarouselWrapper;
 
 // Dados dos slides de Equipe
 const equipeSlides = [
