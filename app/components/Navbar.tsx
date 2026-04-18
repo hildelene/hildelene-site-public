@@ -24,10 +24,12 @@ export default function Navbar() {
           <img
             src="/midia/logo_hildelene_vetor_cmyk.svg"
             className="navbar-logo-img"
-            alt="UERJ Hildelene Nautidesign"
           />
-          <span className="navbar-logo-text">UERJ Hildelene Nautidesign</span>
         </Link>
+        <div className="navbar-title-container">
+          <span className="navbar-title">Hildelene Nautidesign</span>
+          <span className="navbar-subtitle">UERJ</span>
+        </div>
         {/* Botão Intranet */}
         <a href="#" className="navbar-contact-btn">
           Intranet
