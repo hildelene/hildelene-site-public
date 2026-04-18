@@ -1,7 +1,8 @@
 'use client';
 
-import Background from './Background';
 
+import Link from 'next/link';
+import Background from './Background';
 import HeroCarousel from './HeroCarousel';
 
 export default function Hero() {
@@ -24,7 +25,9 @@ export default function Hero() {
 
         <div className="buttons">
           <button className="secondary">Faça parte</button>
-          <button className="secondary">Apoie</button>
+          <Link href="/apoie" legacyBehavior>
+            <a className="secondary">Apoie</a>
+          </Link>
         </div>
 
         {/* CAROUSEL COM MENU LATERAL */}
