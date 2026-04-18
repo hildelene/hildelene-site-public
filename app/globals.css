@@ -1,3 +1,108 @@
+/* ===== ABOUT SECTION ===== */
+.about-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: var(--navy-dark);
+}
+.about-container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+  width: 100%;
+  justify-items: center;
+}
+@media (min-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.about-content {
+  width: 100%;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--cream);
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 640px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .about-title {
+    font-size: 3rem;
+  }
+}
+.about-title-highlight {
+  color: var(--gold);
+}
+.about-divider {
+  height: 0.25rem;
+  width: 5rem;
+  background: linear-gradient(90deg, var(--gold) 0%, transparent 100%);
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+.about-text {
+  color: var(--cream);
+  opacity: 0.8;
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  max-width: 36rem;
+  text-align: center;
+}
+.about-values-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+  justify-items: center;
+}
+.about-value-card {
+  padding: 1rem;
+  background: rgba(10, 12, 20, 0.5);
+  border: 1px solid rgba(246, 192, 108, 0.2);
+  border-radius: 0.5rem;
+  transition: border-color 0.2s;
+  width: 100%;
+  max-width: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-value-card:hover {
+  border-color: var(--gold);
+}
+.about-value-title {
+  color: var(--gold);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.about-value-text {
+  color: var(--cream);
+  opacity: 0.7;
+  font-size: 0.95rem;
+  text-align: center;
+}
 main {
   margin-left: auto;
   margin-right: auto;

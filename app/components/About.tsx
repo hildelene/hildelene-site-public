@@ -1,58 +1,43 @@
 export default function About() {
   return (
-    <section
-      id="about"
-      className="py-20 bg-navy-dark"
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full justify-items-center">
+    <section id="about" className="about-section">
+      <div className="about-container">
+        <div className="about-grid">
           {/* Content */}
-          <div className="animate-fade-in w-full flex flex-col items-center">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-cream mb-6">
-              Sobre a <span className="text-gold">Hildelene</span>
+          <div className="about-content">
+            <h2 className="about-title">
+              Sobre a <span className="about-title-highlight">Hildelene</span>
             </h2>
-
-            <div className="h-1 w-20 bg-gradient-to-r from-gold to-transparent mb-8" />
-
-            <p className="text-cream/80 text-lg mb-6 leading-relaxed">
-              A Hildelene Nautidesign e uma equipe de engenheiros, designers e inovadores
-              apaixonados por evoluir a engenharia naval. Combinamos tecnologia de ponta com
-              conhecimento maritimo tradicional para criar embarcacoes que ampliam os limites do
-              que e possivel.
+            <div className="about-divider" />
+            <p className="about-text">
+              A Hildelene Nautidesign e uma equipe de engenheiros, designers e inovadores apaixonados por evoluir a engenharia naval. Combinamos tecnologia de ponta com conhecimento maritimo tradicional para criar embarcacoes que ampliam os limites do que e possivel.
             </p>
-
-            <p className="text-cream/80 text-lg mb-6 leading-relaxed">
-              Nossa missao e demonstrar excelencia em engenharia por meio de inovacao,
-              colaboracao e precisao. Cada projeto que desenvolvemos representa nosso compromisso
-              com sustentabilidade, desempenho e avancos tecnologicos no setor naval.
+            <p className="about-text">
+              Nossa missao e demonstrar excelencia em engenharia por meio de inovacao, colaboracao e precisao. Cada projeto que desenvolvemos representa nosso compromisso com sustentabilidade, desempenho e avancos tecnologicos no setor naval.
             </p>
-
-            <p className="text-cream/80 text-lg mb-8 leading-relaxed">
-              Do projeto e simulacao aos testes e implementacao, nossa equipe integra
-              competencias diversas para resolver desafios complexos e entregar solucoes relevantes.
+            <p className="about-text">
+              Do projeto e simulacao aos testes e implementacao, nossa equipe integra competencias diversas para resolver desafios complexos e entregar solucoes relevantes.
             </p>
-
             {/* Core Values */}
-            <div className="grid grid-cols-2 gap-4 w-full justify-items-center">
-              <div className="p-4 bg-navy-dark/50 border border-gold/20 rounded-lg hover:border-gold transition-colors w-full flex flex-col items-center">
-                <h3 className="text-gold font-bold mb-2">Innovation</h3>
-                <p className="text-cream/70 text-sm">Superando limites com ideias transformadoras</p>
+            <div className="about-values-grid">
+              <div className="about-value-card">
+                <h3 className="about-value-title">Innovation</h3>
+                <p className="about-value-text">Superando limites com ideias transformadoras</p>
               </div>
-              <div className="p-4 bg-navy-dark/50 border border-gold/20 rounded-lg hover:border-gold transition-colors w-full flex flex-col items-center">
-                <h3 className="text-gold font-bold mb-2">Excelencia</h3>
-                <p className="text-cream/70 text-sm">Busca constante pela qualidade em cada detalhe</p>
+              <div className="about-value-card">
+                <h3 className="about-value-title">Excelencia</h3>
+                <p className="about-value-text">Busca constante pela qualidade em cada detalhe</p>
               </div>
-              <div className="p-4 bg-navy-dark/50 border border-gold/20 rounded-lg hover:border-gold transition-colors w-full flex flex-col items-center">
-                <h3 className="text-gold font-bold mb-2">Colaboracao</h3>
-                <p className="text-cream/70 text-sm">Mais resultado por meio de trabalho em equipe</p>
+              <div className="about-value-card">
+                <h3 className="about-value-title">Colaboracao</h3>
+                <p className="about-value-text">Mais resultado por meio de trabalho em equipe</p>
               </div>
-              <div className="p-4 bg-navy-dark/50 border border-gold/20 rounded-lg hover:border-gold transition-colors w-full flex flex-col items-center">
-                <h3 className="text-gold font-bold mb-2">Sustentabilidade</h3>
-                <p className="text-cream/70 text-sm">Construindo um futuro maritimo responsavel</p>
+              <div className="about-value-card">
+                <h3 className="about-value-title">Sustentabilidade</h3>
+                <p className="about-value-text">Construindo um futuro maritimo responsavel</p>
               </div>
             </div>
           </div>
-
           {/* ...existing code... */}
         </div>
       </div>
