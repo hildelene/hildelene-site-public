@@ -253,3 +253,4 @@ export default function HeroCarouselsWrapper() {
     </div>
   );
 }
+"use client";
