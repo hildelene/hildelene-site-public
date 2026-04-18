@@ -23,4 +23,5 @@ export default function Contact() {
       [name]: value,
     }));
   };
+  return <></>;
 }
