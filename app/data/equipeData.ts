@@ -1,7 +1,7 @@
 // Exemplo de dados para Equipe
 export const equipeData = [
   {
-    id: 'equipe-1',
+    id: 1,
     image: '/midia/herocarousel/eqp1.png',
     title: 'Equipe 1',
     date: '',

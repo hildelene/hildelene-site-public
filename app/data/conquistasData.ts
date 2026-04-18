@@ -1,7 +1,7 @@
 // Exemplo de dados para Conquistas
 export const conquistasData = [
   {
-    id: 'conquista-1',
+    id: 1,
     image: '/midia/herocarousel/frt1.png',
     title: 'Premiações',
     date: '',
