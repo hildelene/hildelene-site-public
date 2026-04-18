@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import NewsCarousel from './components/NewsCarousel';
+import Schedule from './components/Schedule';
 import About from './components/About';
 import Projects from './components/Projects';
 import Sponsors from './components/Sponsors';
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <Schedule />
         <NewsCarousel />
         <About />
         <Projects />

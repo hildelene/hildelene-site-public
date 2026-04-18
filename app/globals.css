@@ -1,3 +1,30 @@
+/* ===== CRONOGRAMA (SCHEDULE) ===== */
+.schedule-section {
+  background: var(--navy-light);
+}
+.schedule-section h2 {
+  color: var(--gold);
+}
+.schedule-section ul {
+  list-style: none;
+  padding: 0;
+}
+.schedule-section li {
+  background: var(--navy);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.schedule-section .text-gold {
+  color: var(--gold);
+}
+.schedule-section .text-gold-shadow {
+  color: var(--gold-shadow);
+}
 /* ===== NAVBAR LOGO + TEXTO ===== */
 .navbar-logo-link {
   --navbar-logo-height: 2rem;
@@ -13,13 +40,28 @@
   display: block;
 }
 
-.navbar-logo-text {
-  color: var(--gold);
+
+/* ===== NOVO TITULO CENTRALIZADO NAVBAR ===== */
+.navbar-title-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+}
+.navbar-title {
+  color: var(--gold);
   font-size: 0.7rem;
   font-weight: bold;
-  white-space: nowrap;
+  line-height: 1.1;
+}
+.navbar-subtitle {
+  color: var(--offwhite);
+  font-size: 0.2rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 1;
 }
 /* ===== BOTÃO INTRANET NAVBAR ===== */
 .navbar-contact-btn {
