@@ -9,7 +9,7 @@ const projetosSlides = [
   {
     id: 1,
     image: "/midia/herocarousel/hero-proj1.svg",
-    title: "Projetos DUNA",
+    title: "1. Nossos Projetos",
     date: "",
     description: "Nosso principal objetivo é a competição DUNA, além disso oferecemos serviços para arrecadação de verba. Também participamos em outros eventos paralelos como feiras e amostras.",
     link: ""
@@ -17,7 +17,7 @@ const projetosSlides = [
   {
     id: 2,
     image: "/midia/herocarousel/hero-proj2.svg",
-    title: "O que é o DUNA?",
+    title: "2. DUNA - Desafio Universitário de Nautimodelismo",
     date: "",
     description: "O DUNA - Desafio Universitário de Nautidesign é um projeto criado pela UFSC, que consiste numa competição universitária inédita no Brasil e de abrangência internacional. O objetivo é fomentar a geração de inovações na área de Engenharia Naval e estimular a interação entre alunos de engenharia, sobretudo, da área naval.",
     link: ""
