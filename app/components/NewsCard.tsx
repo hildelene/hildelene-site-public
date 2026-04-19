@@ -23,12 +23,12 @@ export default function NewsCard({ news, imageStyle }: NewsCardProps) {
       {/* Content */}
       <div className="flex-grow p-6 flex flex-col">
         <p className="text-gold text-sm font-semibold mb-2">{news.date}</p>
-        <h3 className="text-cream font-bold text-lg mb-3 group-hover:text-gold transition-colors line-clamp-2">
+        <div className="titulo-main-carousel">
           {news.title}
-        </h3>
-        <p className="text-cream/70 text-sm mb-4 flex-grow line-clamp-3">
+        </div>
+        <div className="texto-main-carousel">
           {news.description}
-        </p>
+        </div>
 
         {/* Read More Link */}
         <a

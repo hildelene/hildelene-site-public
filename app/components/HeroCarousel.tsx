@@ -137,10 +137,6 @@ export function ProjetosCarousel() {
 
   return (
     <section id="projetos" className="main-carousel-section">
-      <div className="news-carousel-header animate-fade-in">
-        <div className="news-carousel-title">Nossos Projetos</div>
-        <div className="news-carousel-divider" />
-      </div>
       <div className="relative max-w-xl lg:max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="-ml-4 flex touch-pan-y">

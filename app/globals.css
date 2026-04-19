@@ -1,3 +1,32 @@
+/* ===== TÍTULO E TEXTO PADRÃO DOS CAROUSELS PRINCIPAIS ===== */
+.titulo-main-carousel {
+  color: var(--cream);
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+  transition: color 0.3s;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.group:hover .titulo-main-carousel {
+  color: var(--gold);
+}
+
+.texto-main-carousel {
+  color: var(--cream);
+  opacity: 0.7;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 /* ===== NEWS CAROUSEL HEADER/TITLE ===== */
 .news-carousel-header {
   margin-top: 2rem;
