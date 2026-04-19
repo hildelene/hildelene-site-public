@@ -73,7 +73,7 @@ const projetosSlides = [
 ];
 
 // Componente padronizado de carousel (igual MainCarousel/NewsCarousel)
-function ProjetosCarousel() {
+export function ProjetosCarousel() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
   const [parallaxValues, setParallaxValues] = useState<number[]>([]);
