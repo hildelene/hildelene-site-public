@@ -77,7 +77,7 @@ export default function NewsCarousel() {
       id="news"
       className="py-20 bg-navy-dark border-t border-gold/20"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-xl lg:max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="news-carousel-header animate-fade-in">
           <h2 className="news-carousel-title">
