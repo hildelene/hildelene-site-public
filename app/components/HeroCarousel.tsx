@@ -138,10 +138,6 @@ export function ProjetosCarousel() {
   return (
     <section id="projetos" className="main-carousel-section">
       <div className="main-carousel-container relative">
-        <div className="news-carousel-header animate-fade-in">
-          <div className="news-carousel-title">Projetos</div>
-          <div className="news-carousel-divider" />
-        </div>
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="-ml-4 flex touch-pan-y">
             {projetosSlides.map((item, index) => (
