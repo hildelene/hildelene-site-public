@@ -1,7 +1,7 @@
 export default function SponsorsSimple() {
   return (
     <section id="sponsors" className="py-20 bg-navy-dark">
-      <div className="main-carousel-container">
+      <div className="section-padding-lr max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-12 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-cream mb-4">
