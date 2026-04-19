@@ -18,29 +18,7 @@ export default function Footer() {
           <div className="text-cream/50 text-sm">
             &copy; {currentYear} Hildelene Nautidesign. Todos os direitos reservados.
           </div>
-
-          <div className="flex gap-6">
-            <Link
-              href="#"
-              className="text-cream/50 hover:text-gold transition-colors text-sm"
-            >
-              Politica de Privacidade
-            </Link>
-            <Link
-              href="#"
-              className="text-cream/50 hover:text-gold transition-colors text-sm"
-            >
-              Termos de Uso
-            </Link>
-            <Link
-              href="#"
-              className="text-cream/50 hover:text-gold transition-colors text-sm"
-            >
-              Sitemap
-            </Link>
-          </div>
         </div>
-
       </div>
     </footer>
   );
