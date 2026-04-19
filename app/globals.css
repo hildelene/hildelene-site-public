@@ -1,3 +1,24 @@
+/* ===== CONTAINER UNIFICADO DOS CAROUSELS PRINCIPAIS ===== */
+.main-carousel-container {
+  width: 100%;
+  max-width: 80rem; /* ~1280px, igual ao lg:max-w-7xl do Tailwind */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 640px) {
+  .main-carousel-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .main-carousel-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
 /* ===== TÍTULO E TEXTO PADRÃO DOS CAROUSELS PRINCIPAIS ===== */
 .titulo-main-carousel {
   color: var(--cream);

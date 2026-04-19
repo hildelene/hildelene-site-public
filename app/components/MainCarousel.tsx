@@ -240,7 +240,7 @@ function MainCarousel({ data, sectionId, title }: MainCarouselProps) {
         </div>
         <div className="news-carousel-divider" />
       </div>
-      <div className="relative max-w-xl lg:max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+      <div className="main-carousel-container relative">
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="-ml-4 flex touch-pan-y">
             {data.map((item, index) => (
