@@ -159,7 +159,7 @@ export function EquipeCarousel() {
 }
 
 export function ConquistasCarousel() {
-  return <MainCarousel data={conquistasSlides} sectionId="conquistas" title="Conquistas" />;
+  return <MainCarousel data={conquistasSlides} sectionId="conquistas" title="Nossas Conquistas" />;
 }
 
 import type { NewsItem } from '../data/newsData';

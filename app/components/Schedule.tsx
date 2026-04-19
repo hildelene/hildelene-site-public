@@ -11,7 +11,7 @@ export default function Schedule() {
   return (
     <section className="schedule-section-mobile py-10 bg-navy-light text-cream">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-bold mb-6 text-center text-gold">Cronograma 2026</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center text-gold">Cronograma</h2>
         <div className="timeline-mobile relative mx-auto">
           {/* Linha vertical */}
           <div className="timeline-line absolute left-1/2 top-0 h-full w-1 bg-gold -translate-x-1/2 z-0" />

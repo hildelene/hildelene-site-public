@@ -4,10 +4,8 @@
   text-align: center;
 }
 .news-carousel-title {
-  font-size: 1.875rem;
-  font-weight: bold;
+  font-size: 1rem;
   color: var(--cream);
-  margin-bottom: 1rem;
 }
 @media (min-width: 640px) {
   .news-carousel-title {
@@ -23,11 +21,11 @@
   color: var(--gold);
 }
 .news-carousel-divider {
-  height: 0.25rem;
-  width: 5rem;
-  background: linear-gradient(90deg, var(--gold) 0%, transparent 100%);
-  margin: 0 auto;
-  border-radius: 1rem;
+  width: 4rem;
+  height: 0.1rem;
+  margin: 0.3rem auto 0.7rem auto;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--gold) 50%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.6;
 }
 /* ===== MAIN CAROUSELS CARD (UNIFICADO COM NEWS) ===== */
 .main-carousels-card {
