@@ -17,9 +17,11 @@ export default function Home() {
         <MainCarousel />
         <Schedule />
         <NewsCarousel />
-        <About />
-        <SponsorsSimple />
-        <Contact />
+        <div className="under-carousels">
+          <About />
+          <SponsorsSimple />
+          <Contact />
+        </div>
       </main>
       <Footer />
     </div>
